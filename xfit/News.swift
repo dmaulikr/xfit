@@ -23,6 +23,8 @@ class News {
     
     private var _commentCount: Int!
     
+    private var _postKey: String!
+    
     var title: String? {
         return _title
     }
@@ -47,7 +49,11 @@ class News {
         return _commentCount
     }
     
-    init (title: String?, content: String?, featuredImg: String?, category: String?, date: NSDate?, commentCount:Int?) {
+    var postKey: String? {
+        return _postKey
+    }
+    
+    init (title: String?, content: String?, featuredImg: PFFile?, category: String?, date: NSDate?, commentCount:Int?) {
         self._title = title
         self._content = content
         self._category = category
@@ -65,20 +71,12 @@ class News {
             self._title = title
         }
         
-        if let excerpt = dictionary["excerpt"] as? String {
-            self._excerpt = excerpt
-        }
-        
         if let content = dictionary["content"] as? String {
             self._content = content
         }
         
         if let category = dictionary["category"]["categoryName"] as? String {
             self._category = category
-        }
-        
-        if let imageDesc = dictionary["imageDesc"] as? String {
-            self._imageDesc = imageDesc
         }
         
         if let featuredImg = dictionary["featuredImage"] as? PFFile {
