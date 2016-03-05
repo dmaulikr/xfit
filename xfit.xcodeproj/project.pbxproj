@@ -14,6 +14,7 @@
 		984871821C8AA0350037BE70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984871801C8AA0350037BE70 /* LaunchScreen.storyboard */; };
 		9848718B1C8AA3610037BE70 /* dinpro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9848718A1C8AA3610037BE70 /* dinpro.ttf */; };
 		9848718D1C8AA3D80037BE70 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9848718C1C8AA3D80037BE70 /* ionicons.ttf */; };
+		984871901C8AAD4A0037BE70 /* PanelsViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9848718F1C8AAD4A0037BE70 /* PanelsViewBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		984871831C8AA0350037BE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9848718A1C8AA3610037BE70 /* dinpro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dinpro.ttf; sourceTree = "<group>"; };
 		9848718C1C8AA3D80037BE70 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		9848718F1C8AAD4A0037BE70 /* PanelsViewBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelsViewBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		984871761C8AA0340037BE70 /* xfit */ = {
 			isa = PBXGroup;
 			children = (
+				9848718E1C8AAD000037BE70 /* Views */,
 				984871891C8AA30F0037BE70 /* Resources */,
 				984871771C8AA0340037BE70 /* AppDelegate.swift */,
 				984871791C8AA0340037BE70 /* ViewController.swift */,
@@ -76,6 +79,14 @@
 				9848718C1C8AA3D80037BE70 /* ionicons.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		9848718E1C8AAD000037BE70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9848718F1C8AAD4A0037BE70 /* PanelsViewBorder.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 			files = (
 				9848717A1C8AA0340037BE70 /* ViewController.swift in Sources */,
 				984871781C8AA0340037BE70 /* AppDelegate.swift in Sources */,
+				984871901C8AAD4A0037BE70 /* PanelsViewBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xfit_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ChO-vT-OZb">
-                                <rect key="frame" x="100" y="288" width="174" height="92"/>
+                                <rect key="frame" x="100" y="258" width="174" height="92"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="V9C-qy-8KR"/>
                                     <constraint firstAttribute="width" constant="174" id="asl-Bc-WXP"/>
@@ -55,7 +55,7 @@
                             <constraint firstItem="KuK-iC-ocJ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="YCn-z3-E6J"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="KuK-iC-ocJ" secondAttribute="bottom" id="ZzM-2B-lVA"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="O5m-nm-L6J" secondAttribute="bottom" constant="41" id="cti-DO-wRJ"/>
-                            <constraint firstItem="ChO-vT-OZb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kad-RU-7Dx"/>
+                            <constraint firstItem="ChO-vT-OZb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="kad-RU-7Dx"/>
                             <constraint firstItem="KuK-iC-ocJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="loD-Nz-eoo"/>
                             <constraint firstItem="ChO-vT-OZb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n35-kN-pd7"/>
                         </constraints>
