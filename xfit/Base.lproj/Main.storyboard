@@ -170,19 +170,19 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mVt-aT-9F8">
-                                                        <rect key="frame" x="110" y="16" width="123" height="16"/>
+                                                        <rect key="frame" x="110" y="15" width="123" height="20"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="6iN-m6-Bpw">
-                                                                <rect key="frame" x="0.0" y="0.0" width="123" height="16"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="123" height="20"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpB-OS-liA">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="15" height="16"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="15" height="20"/>
                                                                         <fontDescription key="fontDescription" name="Ionicons" family="Ionicons" pointSize="20"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РАСПИСАНИЕ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXh-fs-qYN">
-                                                                        <rect key="frame" x="32" y="0.0" width="91" height="16"/>
+                                                                        <rect key="frame" x="32" y="0.0" width="91" height="20"/>
                                                                         <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
@@ -196,7 +196,14 @@
                                                     <constraint firstItem="mVt-aT-9F8" firstAttribute="top" secondItem="Meu-p5-s4p" secondAttribute="top" constant="16" id="3y4-Hf-710"/>
                                                     <constraint firstAttribute="bottom" secondItem="mVt-aT-9F8" secondAttribute="bottom" constant="18" id="UWi-DL-ZG5"/>
                                                     <constraint firstItem="mVt-aT-9F8" firstAttribute="centerX" secondItem="Meu-p5-s4p" secondAttribute="centerX" id="Ys8-D9-3FC"/>
+                                                    <constraint firstItem="mVt-aT-9F8" firstAttribute="centerY" secondItem="Meu-p5-s4p" secondAttribute="centerY" id="fsm-87-RhO"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="3y4-Hf-710"/>
+                                                        <exclude reference="UWi-DL-ZG5"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                             <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lqV-Ut-qBk" userLabel="BottomLine">
                                                 <rect key="frame" x="0.0" y="48" width="343" height="2"/>
@@ -224,19 +231,19 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7iI-SJ-dJI">
-                                                        <rect key="frame" x="93" y="16" width="158" height="16"/>
+                                                        <rect key="frame" x="93" y="15" width="158" height="20"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="g54-Y9-Tuc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="158" height="16"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="158" height="20"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMq-c4-NXC">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="17" height="16"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="17" height="20"/>
                                                                         <fontDescription key="fontDescription" name="Ionicons" family="Ionicons" pointSize="20"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="АКЦИИ / НОВОСТИ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AV-2k-dyk">
-                                                                        <rect key="frame" x="34" y="0.0" width="124" height="16"/>
+                                                                        <rect key="frame" x="34" y="0.0" width="124" height="20"/>
                                                                         <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="14"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
@@ -249,8 +256,15 @@
                                                 <constraints>
                                                     <constraint firstItem="7iI-SJ-dJI" firstAttribute="top" secondItem="omn-DI-4py" secondAttribute="top" constant="16" id="CGS-66-haG"/>
                                                     <constraint firstItem="7iI-SJ-dJI" firstAttribute="centerX" secondItem="omn-DI-4py" secondAttribute="centerX" id="NJY-eh-ujE"/>
+                                                    <constraint firstItem="7iI-SJ-dJI" firstAttribute="centerY" secondItem="omn-DI-4py" secondAttribute="centerY" id="W2S-9l-PjV"/>
                                                     <constraint firstAttribute="bottom" secondItem="7iI-SJ-dJI" secondAttribute="bottom" constant="18" id="XAz-ta-Co4"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="CGS-66-haG"/>
+                                                        <exclude reference="XAz-ta-Co4"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                             <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zkE-gl-J9S" userLabel="BottomLine">
                                                 <rect key="frame" x="0.0" y="48" width="343" height="2"/>
@@ -767,6 +781,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="94.5" y="445.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wGR-pw-j3T">
+            <objects>
+                <viewController id="5Zy-VD-m7v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4to-jK-cYV"/>
+                        <viewControllerLayoutGuide type="bottom" id="oTL-R5-6X6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jAa-lo-Dgr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRR-UU-zGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603.5" y="445.5"/>
         </scene>
     </scenes>
     <resources>
