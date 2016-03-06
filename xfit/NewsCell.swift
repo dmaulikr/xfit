@@ -12,7 +12,7 @@ import Parse
 class NewsCell: UITableViewCell {
         
         @IBOutlet weak var featuredImg: UIImageView!
-        
+    
         @IBOutlet weak var titleLbl: UILabel!
         
         @IBOutlet weak var categoryLbl: UILabel!
@@ -24,68 +24,58 @@ class NewsCell: UITableViewCell {
         @IBOutlet weak var cellFooterView: UIView!
         
         
-        private var _post: News?
-        
-        var post: News? {
-            return _post
+        private var _news: News?
+    
+        var news: News? {
+            return _news
         }
-        
-        override func awakeFromNib() {
-            super.awakeFromNib()
-            // Initialization code
-            
-            
+    
+        override func drawRect(rect: CGRect) {
+            featuredImg.clipsToBounds = true
         }
-        
-//        override func drawRect(rect: CGRect) {
-//            featuredImg.clipsToBounds = true
-//        }
     
         
-        func configureCell(post: News, img: UIImage?) {
+        func configureCell(news: News, img: UIImage?) {
             
-            self._post = post
+            self._news = news
             
-            if let title = post.title where title != "" {
-                self.titleLbl.text = title
+            if let title = news.title where title != "" {
+                self.titleLbl.text = title.uppercaseString
             } else {
                 self.titleLbl.text = nil
             }
             
-            if let category = post.category where category != "" {
-                self.categoryLbl.text = "     \(category.uppercaseString)     "
-                if category == "fun" {
-                    self.categoryLbl.backgroundColor = UIColor(red: 244/255, green: 121/255, blue: 31/255, alpha: 1)
-                } else if category == "history" {
-                    self.categoryLbl.backgroundColor = UIColor(red: 0, green: 174/255, blue: 230/255, alpha: 1)
-                } else if category == "video" {
-                    self.categoryLbl.backgroundColor = UIColor(red: 237/255, green: 28/255, blue: 36/255, alpha: 1)
-                }
+            if let category = news.category where category != "" {
+                self.categoryLbl.text = "\(category.uppercaseString)"
+                if category == "video" {
+                    self.categoryLbl.backgroundColor = UIColor(red: 118.0/255.0, green: 190.0/255.0, blue: 52.0/255.0, alpha: 1.0)
+                    self.categoryLbl.layer.borderColor = UIColor(red: (118.0/255.0), green: (190.0/255.0), blue: (52.0/255.0), alpha: 1.0).CGColor
+                } 
             } else {
                 self.categoryLbl.hidden = true
             }
             
-            if let date = post.date where date != "" {
+            if let date = news.date where date != "" {
                 
                 let Date:NSDateFormatter = NSDateFormatter()
-                Date.dateFormat = "yyyy-MM-dd"
+                Date.dateFormat = "dd.MM.yyyy"
                 self.dateLbl.text = Date.stringFromDate(date)
                 
             }
             
-            if post.featuredImg != nil {
+            if news.featuredImg != nil {
                 
                 if img != nil {
                     self.featuredImg.image = img
                 } else {
                     
-                    let featuredImage = post.featuredImg
+                    let featuredImage = news.featuredImg
                     
                     featuredImage!.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
                         if (error == nil) {
                             let image = UIImage(data:imageData!)!
                             self.featuredImg.image = image
-                            NewsVC.imageCache.setObject(image, forKey: self.post!.featuredImg!)
+                            NewsVC.imageCache.setObject(image, forKey: self.news!.featuredImg!)
                         }
                     }
                     
@@ -95,8 +85,14 @@ class NewsCell: UITableViewCell {
                 self.featuredImg.hidden = true
             }
             
-            if let commentCount = post.commentCount where commentCount > 0 {
-                self.commentCount.text = "\(commentCount)"
+            if let commentCount = news.commentCount {
+                if commentCount == 1 {
+                    self.commentCount.text = "\(commentCount) комментарий"
+                } else if commentCount == 2 {
+                    self.commentCount.text = "\(commentCount) комментария"
+                } else {
+                    self.commentCount.text = "\(commentCount) комментариев"
+                }
             } 
             
         }

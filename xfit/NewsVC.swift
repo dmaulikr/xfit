@@ -19,12 +19,12 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //            self.evo_drawerController?.openDrawerGestureModeMask = .All
         }
         
-        var posts = [News]()
+        var news = [News]()
         var category: Category!
         static var imageCache = NSCache()
-        let postLimit = 2
-        var postSkip = 0
-        var postCount = 0
+        let newsLimit = 2
+        var newsSkip = 0
+        var newsCount = 0
         var refreshControl:UIRefreshControl!
         var loadMoreStatus = false
         var isRefreshing = false
@@ -53,12 +53,12 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let predicate = NSPredicate(format: "published = 1")
             let PostsQuery: PFQuery =  PFQuery(className:"Post", predicate: predicate)
             if category != nil {
-//                PostsQuery.whereKey("category", equalTo: PFObject(withoutDataWithClassName: "Category", objectId: category.categoryId!))
+                PostsQuery.whereKey("category", equalTo: PFObject(withoutDataWithClassName: "Category", objectId: category.categoryId!))
             }
             PostsQuery.countObjectsInBackgroundWithBlock {
                 (count: Int32, error: NSError?) -> Void in
                 if error == nil {
-                    self.postCount = Int(count)
+                    self.newsCount = Int(count)
                 }
             }
         }
@@ -71,14 +71,14 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             PostsQuery.includeKey("category")
             PostsQuery.addAscendingOrder("priority")
             if category != nil {
-//                PostsQuery.whereKey("category", equalTo: PFObject(withoutDataWithClassName: "Category", objectId: category.categoryId!))
+                PostsQuery.whereKey("category", equalTo: PFObject(withoutDataWithClassName: "Category", objectId: category.categoryId!))
             }
-            PostsQuery.skip = postSkip
-            PostsQuery.limit = postLimit
+            PostsQuery.skip = newsSkip
+            PostsQuery.limit = newsLimit
             PostsQuery.cachePolicy = .NetworkElseCache
             PostsQuery.findObjectsInBackgroundWithBlock { (objects:[PFObject]?, error: NSError?) -> Void in
                 if !self.loadMoreStatus {
-                    self.posts = []
+                    self.news = []
                 }
                 if error == nil {
                     
@@ -86,8 +86,8 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                         
                         let key = object.objectId as String!
                         let date = object.createdAt as NSDate!
-                        let post = News(postKey: key, date: date, dictionary: object)
-                        self.posts.append(post)
+                        let new = News(postKey: key, date: date, dictionary: object)
+                        self.news.append(new)
                         
                     }
                     
@@ -112,7 +112,7 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
                 dispatch_async(dispatch_get_main_queue()) {
                     self.preventAnimation.removeAll()
-                    self.postSkip = 0
+                    self.newsSkip = 0
                     self.parseDataFromParse()
                     self.tableView.reloadData()
                 }
@@ -145,8 +145,8 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         func loadMoreBegin(newtext:String, loadMoreEnd:(Int) -> ()) {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
                 dispatch_async(dispatch_get_main_queue()) {
-                    self.postSkip += self.postLimit
-                    if self.postSkip <= self.postCount {
+                    self.newsSkip += self.newsLimit
+                    if self.newsSkip <= self.newsCount {
                         self.parseDataFromParse()
                     } else {
                         self.loadMoreStatus = true
@@ -165,12 +165,12 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         
         func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return posts.count
+            return news.count
         }
         
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             
-            let post = self.posts[indexPath.row]
+            let news = self.news[indexPath.row]
             
             if let cell = tableView.dequeueReusableCellWithIdentifier("NewsCell") as? NewsCell {
                 
@@ -180,13 +180,13 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 
                 var img: UIImage?
                 
-                if let url = post.featuredImg {
+                if let url = news.featuredImg {
                     
                     img = NewsVC.imageCache.objectForKey(url) as? UIImage
                     
                 }
                 
-                cell.configureCell(post, img: img)
+                cell.configureCell(news, img: img)
                 
                 return cell
             } else {
@@ -211,21 +211,21 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //            performSegueWithIdentifier("ViewerVC", sender: post)
 //        }
 //        
-//        func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//            
-//            let post = self.posts[indexPath.row]
-//            
-//            performSegueWithIdentifier("DetailVC", sender: post)
-//        }
-//        
-//        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//            if segue.identifier == "DetailVC" {
-//                if let detailVC = segue.destinationViewController as? DetailVC {
-//                    if let post = sender as? News {
-//                        detailVC.post = post
-//                    }
-//                }
-//            }
+        func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+            let news = self.news[indexPath.row]
+            performSegueWithIdentifier("NewsDetailVC", sender: news)
+            
+        }
+
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            if segue.identifier == "NewsDetailVC" {
+                if let newsDetailVC = segue.destinationViewController as? NewsDetailVC {
+                    if let news = sender as? News {
+                        newsDetailVC.news = news
+                    }
+                }
+            }
 //            if segue.identifier == "ViewerVC" {
 //                if let viewerVC = segue.destinationViewController as? ViewerVC {
 //                    if let post = sender as? News {
@@ -233,7 +233,7 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //                    }
 //                }
 //            }
-//        }
+        }
 
         
         
