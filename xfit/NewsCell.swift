@@ -47,7 +47,7 @@ class NewsCell: UITableViewCell {
             
             if let category = news.category where category != "" {
                 self.categoryLbl.text = "\(category.uppercaseString)"
-                if category == "video" {
+                if category == "Акции" {
                     self.categoryLbl.backgroundColor = UIColor(red: 118.0/255.0, green: 190.0/255.0, blue: 52.0/255.0, alpha: 1.0)
                     self.categoryLbl.layer.borderColor = UIColor(red: (118.0/255.0), green: (190.0/255.0), blue: (52.0/255.0), alpha: 1.0).CGColor
                 } 
@@ -64,23 +64,7 @@ class NewsCell: UITableViewCell {
             }
             
             if news.featuredImg != nil {
-                
-                if img != nil {
-                    self.featuredImg.image = img
-                } else {
-                    
-                    let featuredImage = news.featuredImg
-                    
-                    featuredImage!.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-                        if (error == nil) {
-                            let image = UIImage(data:imageData!)!
-                            self.featuredImg.image = image
-                            NewsVC.imageCache.setObject(image, forKey: self.news!.featuredImg!)
-                        }
-                    }
-                    
-                }
-                
+                self.featuredImg.image = UIImage(named: news.featuredImg!)
             } else {
                 self.featuredImg.hidden = true
             }

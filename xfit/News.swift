@@ -13,7 +13,7 @@ class News {
     
     private var _title: String?
     
-    private var _featuredImg: PFFile?
+    private var _featuredImg: String?
     
     private var _content: String?
     
@@ -33,7 +33,7 @@ class News {
         return _content
     }
     
-    var featuredImg: PFFile? {
+    var featuredImg: String? {
         return _featuredImg
     }
     
@@ -53,7 +53,7 @@ class News {
         return _postKey
     }
     
-    init (title: String?, content: String?, featuredImg: PFFile?, category: String?, date: NSDate?, commentCount:Int?) {
+    init (title: String?, content: String?, featuredImg: String?, category: String?, date: NSDate?, commentCount:Int?) {
         self._title = title
         self._content = content
         self._category = category
@@ -62,10 +62,7 @@ class News {
         self._commentCount = commentCount
     }
     
-    init(postKey: String, date: NSDate, dictionary: PFObject) {
-        
-        self._postKey = postKey
-        self._date = date
+    init(dictionary: AnyObject) {
         
         if let title = dictionary["title"] as? String {
             self._title = title
@@ -75,11 +72,11 @@ class News {
             self._content = content
         }
         
-        if let category = dictionary["category"]["categoryName"] as? String {
+        if let category = dictionary["category"] as? String {
             self._category = category
         }
         
-        if let featuredImg = dictionary["featuredImage"] as? PFFile {
+        if let featuredImg = dictionary["featuredImage"] as? String {
             self._featuredImg = featuredImg
         }
         

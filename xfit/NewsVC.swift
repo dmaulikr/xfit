@@ -45,7 +45,7 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             tableView.estimatedRowHeight = tableView.rowHeight
             tableView.rowHeight = UITableViewAutomaticDimension
             
-            self.postsCount()
+//            self.postsCount()
             self.parseDataFromParse()
         }
         
@@ -64,38 +64,32 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         
         func parseDataFromParse() {
-            
-            
-            let predicate = NSPredicate(format: "published = 1")
-            let PostsQuery: PFQuery =  PFQuery(className:"Post", predicate: predicate)
-            PostsQuery.includeKey("category")
-            PostsQuery.addAscendingOrder("priority")
-            if category != nil {
-                PostsQuery.whereKey("category", equalTo: PFObject(withoutDataWithClassName: "Category", objectId: category.categoryId!))
-            }
-            PostsQuery.skip = newsSkip
-            PostsQuery.limit = newsLimit
-            PostsQuery.cachePolicy = .NetworkElseCache
-            PostsQuery.findObjectsInBackgroundWithBlock { (objects:[PFObject]?, error: NSError?) -> Void in
-                if !self.loadMoreStatus {
-                    self.news = []
-                }
-                if error == nil {
+
                     
-                    for object in objects! {
+                   let objects = [[
+                        "category":"Новости",
+                        "comments":"5",
+                        "featuredImage":"img2",
+                        "content":"Во всех фитнес-клубах сети X-Fit!",
+                        "title":"X-FIT CB12 - СОВМЕСТНАЯ АКЦИЯ"
+                    ],[
+                        "category":"Акции",
+                        "comments":"20",
+                        "content":"ВНИМАНИЕ! В феврале, при приобретении индивидуальной или семейной годовой карты вы получаете скидку 14%. Во всех фитнес-клубах сети X-Fit! ",
+                        "featuredImage":"img1",
+                        "title":"ИНДИВИДУАЛЬНЫЕ И СЕМЕЙНЫЕ КАРТЫ СО СКИДКОЙ"
+                    ]]
+            
+                    for object in objects {
                         
-                        let key = object.objectId as String!
-                        let date = object.createdAt as NSDate!
-                        let new = News(postKey: key, date: date, dictionary: object)
+                        let new = News(dictionary: object)
+            
                         self.news.append(new)
                         
                     }
-                    
-                }
+               
                 
                 self.tableView.reloadData()
-                
-            }
         }
         
         func refresh(sender:AnyObject) {
@@ -113,8 +107,8 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 dispatch_async(dispatch_get_main_queue()) {
                     self.preventAnimation.removeAll()
                     self.newsSkip = 0
-                    self.parseDataFromParse()
-                    self.tableView.reloadData()
+//                    self.parseDataFromParse()
+//                    self.tableView.reloadData()
                 }
                 sleep(2)
                 
@@ -128,7 +122,7 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let currentOffset = scrollView.contentOffset.y
             let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
             if (maximumOffset - currentOffset) <= 0 {
-                loadMore()
+//                loadMore()
             }
         }
         

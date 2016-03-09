@@ -11,18 +11,20 @@ import Parse
 
 let offset_HeaderStop:CGFloat = 243.0 // At this offset the Header stops its transformations
 
-class NewsDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class NewsDetailVC: UIViewController, UIScrollViewDelegate  {
     
         var news: News!
         var toggleRightDrawer: Bool?
         static var imageCache = NSCache()
         var preventAnimation = Set<NSIndexPath>()
     
+        @IBOutlet weak var headerTitle: UILabel!
+        @IBOutlet weak var headerImage: UIImageView!
+        @IBOutlet var scrollView:UIScrollView!
         @IBOutlet weak var postDate: UILabel!
         @IBOutlet weak var titleLbl: UILabel!
         @IBOutlet weak var contentField: UILabel!
     
-        @IBOutlet weak var headerImage: UIImageView!
         @IBOutlet weak var imageViewer: UIView!
         
         @IBOutlet weak var categoryLbl: UILabel!
@@ -37,9 +39,7 @@ class NewsDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            tableView.delegate = self
-            tableView.dataSource = self
-            
+            scrollView.delegate = self
             self.updateUI()
             
 //            let tap = UITapGestureRecognizer(target: self, action: "showImageViewer")
@@ -58,43 +58,22 @@ class NewsDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             
             let Date:NSDateFormatter = NSDateFormatter()
             Date.dateFormat = "dd.MM.yyyy"
-            postDate.text = Date.stringFromDate(news.date!)
+//            postDate.text = Date.stringFromDate(news.date!)
             
             titleLbl.text = news.title?.uppercaseString
+            headerTitle.text = news.title?.uppercaseString
             contentField.text = news.content
             
             if let category = news.category where category != "" {
                 self.categoryLbl.text = "\(category.uppercaseString)"
-                if category == "video" {
-                    self.categoryLbl.backgroundColor = UIColor(red: 118.0/255.0, green: 190.0/255.0, blue: 52.0/255.0, alpha: 1.0)
-                    self.categoryLbl.layer.borderColor = UIColor(red: (118.0/255.0), green: (190.0/255.0), blue: (52.0/255.0), alpha: 1.0).CGColor
-                }
+                self.categoryLbl.backgroundColor = UIColor(red: 118.0/255.0, green: 190.0/255.0, blue: 52.0/255.0, alpha: 1.0)
+                self.categoryLbl.layer.borderColor = UIColor(red: (118.0/255.0), green: (190.0/255.0), blue: (52.0/255.0), alpha: 1.0).CGColor
             } else {
                 self.categoryLbl.hidden = true
             }
             
-            var img: UIImage?
-            
             if let url = news.featuredImg {
-                
-                img = NewsDetailVC.imageCache.objectForKey(url) as? UIImage
-                
-                if img != nil {
-                    self.headerImage.image = img
-                } else {
-                    
-                    let featuredImage = news.featuredImg
-                    
-                    featuredImage!.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-                        if (error == nil) {
-                            let image = UIImage(data:imageData!)!
-                            self.headerImage.image = image
-                            NewsDetailVC.imageCache.setObject(image, forKey: self.news!.featuredImg!)
-                        }
-                    }
-                    
-                }
-                
+                self.headerImage.image = UIImage(named: url)
             }
             
         }
@@ -104,29 +83,9 @@ class NewsDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             headerImage.clipsToBounds = true
             
         }
-        
-        func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-            return 1
-        }
-    
-        func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
-        }
-    
-        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-            if let cell = tableView.dequeueReusableCellWithIdentifier("CommentCell") as? NewsCell {
-                return cell
-            } else {
-                return NewsCell()
-            }
-        
-        }
     
         
         func scrollViewDidScroll(scrollView: UIScrollView) {
-            
-            print("voo")
             
             let offset = scrollView.contentOffset.y
             var headerTransform = CATransform3DIdentity
@@ -141,7 +100,10 @@ class NewsDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate
                 headerTransform = CATransform3DTranslate(headerTransform, 0, headerSizevariation, 0)
                 headerTransform = CATransform3DScale(headerTransform, 1.0 + headerScaleFactor, 1.0 + headerScaleFactor, 0)
                 
+                labelsTransform = CATransform3DTranslate(labelsTransform, 0, offset, 0)
+                
                 headerImage.layer.transform = headerTransform
+                categoryLbl.layer.transform = labelsTransform
             }
                 
                 // SCROLL UP/DOWN ------------
@@ -158,8 +120,6 @@ class NewsDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             // Apply Transformations
             
             headerImage.layer.transform = headerTransform
-            
-            categoryLbl.layer.transform = labelsTransform
         }
         
         override func viewDidLayoutSubviews() {
@@ -189,7 +149,7 @@ class NewsDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate
                 textToShare = "\(news!.title!)"
             }
             
-            if let myWebsite = NSURL(string: "http://lololympics.com/")
+            if let myWebsite = NSURL(string: "")
             {
                 let objectsToShare = [textToShare, myWebsite]
                 let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
