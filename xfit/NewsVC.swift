@@ -16,7 +16,7 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         override func viewWillAppear(animated: Bool) {
             self.navigationController?.navigationBarHidden = true
-//            self.evo_drawerController?.openDrawerGestureModeMask = .All
+            self.evo_drawerController?.openDrawerGestureModeMask = .All
         }
         
         var news = [News]()
@@ -229,8 +229,15 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //            }
         }
 
+    @IBAction func openMenu(sender: AnyObject) {
+        self.evo_drawerController?.toggleDrawerSide(.Left, animated: true, completion: nil)
         
-        
-        
+    }
+    
+    @IBAction func openProfile(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    
 }
 

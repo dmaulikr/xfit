@@ -8,16 +8,40 @@
 
 import UIKit
 import Parse
+import DrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var drawerController: DrawerController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Parse.setApplicationId("DWyFUzP1IVWsazJyqA1q0NwLMdTPyTo4ypLNxzKg", clientKey: "wjw3nYXfyejxTIc1sFLkLS80h7lO8GUFJTuVID8H")
+        
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var centerViewController:UIViewController = UIViewController()
+        
+        centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainMenuVC") as! MainMenuVC
+        
+        let leftSideNavController = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideVC") as! LeftSideVC
+        
+        let leftSideNav = UINavigationController(rootViewController: leftSideNavController)
+        let centerNav = UINavigationController(rootViewController: centerViewController)
+        
+        self.drawerController = DrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
+        
+        self.drawerController.showsShadows = true
+        self.drawerController.maximumLeftDrawerWidth = 320.0
+        self.drawerController.restorationIdentifier = "Drawer"
+        self.drawerController.openDrawerGestureModeMask = .All
+        self.drawerController.closeDrawerGestureModeMask = .All
+        
+        self.window?.rootViewController = self.drawerController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

@@ -1,13 +1,21 @@
 PODS:
   - Bolts/Tasks (1.6.0)
+  - DrawerController (1.1.0):
+    - DrawerController/Core (= 1.1.0)
+    - DrawerController/DrawerVisualStates (= 1.1.0)
+  - DrawerController/Core (1.1.0)
+  - DrawerController/DrawerVisualStates (1.1.0):
+    - DrawerController/Core
   - Parse (1.12.0):
     - Bolts/Tasks (~> 1.5)
 
 DEPENDENCIES:
+  - DrawerController (~> 1.0)
   - Parse
 
 SPEC CHECKSUMS:
   Bolts: f52a250053bb517ca874523c3913776359ab3def
+  DrawerController: 8fd56e6238399a08c4af054fbea0ef8669cd81f3
   Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
 
 COCOAPODS: 0.39.0

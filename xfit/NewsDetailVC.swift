@@ -167,7 +167,7 @@ class NewsDetailVC: UIViewController, UIScrollViewDelegate  {
             if toggleRightDrawer != true {
                 self.navigationController?.popViewControllerAnimated(true)
             } else {
-//                self.evo_drawerController?.toggleRightDrawerSideAnimated(true, completion: nil)
+                self.evo_drawerController?.toggleRightDrawerSideAnimated(true, completion: nil)
             }
         }
         
@@ -179,6 +179,10 @@ class NewsDetailVC: UIViewController, UIScrollViewDelegate  {
                     }
                 }
             }
+        }
+
+        @IBAction func openProfile(sender: AnyObject) {
+            self.navigationController?.popViewControllerAnimated(true)
         }
     
         
