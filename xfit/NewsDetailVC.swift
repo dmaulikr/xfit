@@ -42,14 +42,14 @@ class NewsDetailVC: UIViewController, UIScrollViewDelegate  {
             scrollView.delegate = self
             self.updateUI()
             
-//            let tap = UITapGestureRecognizer(target: self, action: "showImageViewer")
-//            imageViewer.addGestureRecognizer(tap)
+            let tap = UITapGestureRecognizer(target: self, action: "showImageViewer")
+            imageViewer.addGestureRecognizer(tap)
             
         }
         
         func showImageViewer() {
-            let currentPost = news
-            performSegueWithIdentifier("ViewerVC", sender: currentPost)
+            let img = news.featuredImg
+            performSegueWithIdentifier("ViewerVC", sender: img)
         }
     
         
@@ -171,15 +171,15 @@ class NewsDetailVC: UIViewController, UIScrollViewDelegate  {
             }
         }
         
-//        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//            if segue.identifier == "ViewerVC" {
-//                if let viewerVC = segue.destinationViewController as? ViewerVC {
-//                    if let post = sender as? News {
-//                        viewerVC.news = news
-//                    }
-//                }
-//            }
-//        }
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            if segue.identifier == "ViewerVC" {
+                if let viewerVC = segue.destinationViewController as? ViewerVC {
+                    if let img = sender as? String {
+                        viewerVC.img = img
+                    }
+                }
+            }
+        }
     
         
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AB1FD671C90364C007334FB /* ViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1FD661C90364C007334FB /* ViewerVC.swift */; };
 		7177D93D7AE280615B1A16A3 /* Pods_xfit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3BD00BCC22D45019F8076D /* Pods_xfit.framework */; };
 		984871781C8AA0340037BE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984871771C8AA0340037BE70 /* AppDelegate.swift */; };
 		9848717D1C8AA0350037BE70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9848717B1C8AA0350037BE70 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		0F3BD00BCC22D45019F8076D /* Pods_xfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB1FD661C90364C007334FB /* ViewerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerVC.swift; sourceTree = "<group>"; };
 		8810B9EBA639E4CBA63D98B9 /* Pods-xfit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xfit.release.xcconfig"; path = "Pods/Target Support Files/Pods-xfit/Pods-xfit.release.xcconfig"; sourceTree = "<group>"; };
 		984871741C8AA0340037BE70 /* xfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xfit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		984871771C8AA0340037BE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				984871971C8AE90F0037BE70 /* NewsVC.swift */,
 				986274601C8C771B005B29AC /* NewsDetailVC.swift */,
+				5AB1FD661C90364C007334FB /* ViewerVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				984871931C8ACCFD0037BE70 /* News.swift in Sources */,
 				9862745F1C8C1956005B29AC /* NewsCategories.swift in Sources */,
 				984871901C8AAD4A0037BE70 /* PanelsViewBorder.swift in Sources */,
+				5AB1FD671C90364C007334FB /* ViewerVC.swift in Sources */,
 				984871981C8AE90F0037BE70 /* NewsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
