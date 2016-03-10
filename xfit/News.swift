@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Parse
 
 class News {
     
@@ -85,20 +84,5 @@ class News {
         }
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }

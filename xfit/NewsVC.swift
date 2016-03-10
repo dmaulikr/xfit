@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 
 class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
@@ -50,17 +49,7 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         
         func postsCount() {
-            let predicate = NSPredicate(format: "published = 1")
-            let PostsQuery: PFQuery =  PFQuery(className:"Post", predicate: predicate)
-            if category != nil {
-                PostsQuery.whereKey("category", equalTo: PFObject(withoutDataWithClassName: "Category", objectId: category.categoryId!))
-            }
-            PostsQuery.countObjectsInBackgroundWithBlock {
-                (count: Int32, error: NSError?) -> Void in
-                if error == nil {
-                    self.newsCount = Int(count)
-                }
-            }
+            
         }
         
         func parseDataFromParse() {

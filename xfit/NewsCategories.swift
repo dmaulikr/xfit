@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Parse
 
 class Category {
     
@@ -26,7 +25,7 @@ class Category {
         self._categoryName = categoryName
     }
     
-    init(categoryId: String, dictionary: PFObject) {
+    init(categoryId: String, dictionary: AnyObject) {
         
         self._categoryId = categoryId
         

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 
 class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -100,7 +99,6 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let refreshAlert = UIAlertController(title: "Log Out", message: "Log out baby. Log out...", preferredStyle: UIAlertControllerStyle.Alert)
             
             refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
-                PFUser.logOut()
                 let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LogInVC") as UIViewController!
                 let centerNav = UINavigationController(rootViewController: centerViewController)
                 
@@ -115,6 +113,28 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             }))
             
             presentViewController(refreshAlert, animated: true, completion: nil)
+            
+            break;
+            
+        case 7:
+            
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ServicesVC") as! ServicesVC
+            let centerNav = UINavigationController(rootViewController: centerViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.drawerController!.centerViewController = centerNav
+            appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
+            
+            break;
+            
+        case 8:
+            
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("TrainersVC") as! TrainersVC
+            let centerNav = UINavigationController(rootViewController: centerViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.drawerController!.centerViewController = centerNav
+            appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
             
             break;
             

@@ -24,5 +24,11 @@ class MainMenuVC: UIViewController {
     @IBAction func NewsViewBtn(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
     }
-    
+   
+    @IBAction func TrainersViewBtn(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    @IBAction func ServicesViewBtn(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
 }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 
 let offset_HeaderStop:CGFloat = 243.0 // At this offset the Header stops its transformations
 
@@ -34,7 +33,7 @@ class NewsDetailVC: UIViewController, UIScrollViewDelegate  {
         
         override func viewWillAppear(animated: Bool) {
             self.navigationController?.navigationBarHidden = true
-//            self.evo_drawerController?.openDrawerGestureModeMask = .All
+            self.evo_drawerController?.openDrawerGestureModeMask = .Custom
         }
         
         override func viewDidLoad() {

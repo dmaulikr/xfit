@@ -4,17 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Bolts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>DrawerController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B0214E86E9E229E292863BC821997C4D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BCA053B6430690326435042FEB61B458</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BFE0013A3892F31C3A00E0E6DBCF720C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>D083682CF36071495A66680CF5CE2BA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9C94BD1FB23C0E4D37B2BBECB37CCDD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
