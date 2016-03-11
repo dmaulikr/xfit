@@ -58,7 +58,7 @@ class Services {
             self._content = content
         }
         
-        if let featuredImg = dictionary["featuredImage"] as? String {
+        if let featuredImg = dictionary["featuredImg"] as? String {
             self._featuredImg = featuredImg
         }
         

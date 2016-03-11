@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A75425F1C92B7DA0024077E /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75425E1C92B7DA0024077E /* AboutVC.swift */; };
+		5A7542611C92C2030024077E /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7542601C92C2030024077E /* ContactsVC.swift */; };
 		5A7A20A51C9158620067F333 /* TrainersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A20A41C9158620067F333 /* TrainersVC.swift */; };
 		5A7A20A71C9165ED0067F333 /* Trainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A20A61C9165ED0067F333 /* Trainers.swift */; };
 		5A7A20A91C91666C0067F333 /* TrainersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A20A81C91666C0067F333 /* TrainersCell.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		0F3BD00BCC22D45019F8076D /* Pods_xfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A75425E1C92B7DA0024077E /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		5A7542601C92C2030024077E /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		5A7A20A41C9158620067F333 /* TrainersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainersVC.swift; sourceTree = "<group>"; };
 		5A7A20A61C9165ED0067F333 /* Trainers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trainers.swift; sourceTree = "<group>"; };
 		5A7A20A81C91666C0067F333 /* TrainersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainersCell.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				5A7A20AB1C9188A50067F333 /* TrainerDetailVC.swift */,
 				5A7A20AD1C91AF2A0067F333 /* ServicesVC.swift */,
 				5A7A20B31C91B8990067F333 /* ServicesDetailVC.swift */,
+				5A75425E1C92B7DA0024077E /* AboutVC.swift */,
+				5A7542601C92C2030024077E /* ContactsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -324,10 +330,12 @@
 				5AB1FD6F1C905D57007334FB /* ProfileVC.swift in Sources */,
 				5AB1FD6B1C90401F007334FB /* MenuCell.swift in Sources */,
 				5AB1FD6D1C9053DD007334FB /* MainMenuVC.swift in Sources */,
+				5A75425F1C92B7DA0024077E /* AboutVC.swift in Sources */,
 				9848719C1C8AEB920037BE70 /* RoundBtnViewStyle.swift in Sources */,
 				984871951C8ADAFC0037BE70 /* CategoryLabelBorder.swift in Sources */,
 				9848719A1C8AEAAC0037BE70 /* NewsCell.swift in Sources */,
 				5A7A20B01C91B4F50067F333 /* ServicesCell.swift in Sources */,
+				5A7542611C92C2030024077E /* ContactsVC.swift in Sources */,
 				5A7A20B21C91B6CE0067F333 /* Services.swift in Sources */,
 				984871931C8ACCFD0037BE70 /* News.swift in Sources */,
 				5A7A20AE1C91AF2A0067F333 /* ServicesVC.swift in Sources */,

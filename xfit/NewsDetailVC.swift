@@ -61,7 +61,17 @@ class NewsDetailVC: UIViewController, UIScrollViewDelegate  {
             
             titleLbl.text = news.title?.uppercaseString
             headerTitle.text = news.title?.uppercaseString
-            contentField.text = news.content
+            
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = 8
+            
+            if let contentString = news.content {
+                
+                let attrString = NSMutableAttributedString(string: contentString)
+                attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+                self.contentField.attributedText = attrString
+                
+            }
             
             if let category = news.category where category != "" {
                 self.categoryLbl.text = "\(category.uppercaseString)"

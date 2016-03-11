@@ -53,8 +53,17 @@ class TrainerDetailVC: UIViewController, UIScrollViewDelegate {
             
             titleLbl.text = trainer.name?.uppercaseString
             headerTitle.text = trainer.name?.uppercaseString
-            contentField.text = trainer.content
-
+            
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = 8
+            
+            if let contentString = trainer.content {
+                
+                let attrString = NSMutableAttributedString(string: contentString)
+                attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+                self.contentField.attributedText = attrString
+                
+            }
             
             if let url = trainer.featuredImg {
                 self.headerImage.image = UIImage(named: url)

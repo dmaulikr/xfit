@@ -40,7 +40,7 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 34.0
+        return 46.0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -96,23 +96,12 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
         case 5:
             
-            let refreshAlert = UIAlertController(title: "Log Out", message: "Log out baby. Log out...", preferredStyle: UIAlertControllerStyle.Alert)
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("AboutVC") as! AboutVC
+            let centerNav = UINavigationController(rootViewController: centerViewController)
             
-            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
-                let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LogInVC") as UIViewController!
-                let centerNav = UINavigationController(rootViewController: centerViewController)
-                
-                let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                
-                appDelegate.drawerController!.centerViewController = centerNav
-                appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
-            }))
-            
-            refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
-                
-            }))
-            
-            presentViewController(refreshAlert, animated: true, completion: nil)
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.drawerController!.centerViewController = centerNav
+            appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
             
             break;
             
