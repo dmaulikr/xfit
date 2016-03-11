@@ -127,6 +127,17 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             
             break;
             
+        case 10:
+            
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContactsVC") as! ContactsVC
+            let centerNav = UINavigationController(rootViewController: centerViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.drawerController!.centerViewController = centerNav
+            appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
+            
+            break;
+            
         default:
             
             print("\(menuItems[indexPath.row]) is selected");

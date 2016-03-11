@@ -29,7 +29,7 @@ class TrainersVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
         
         let objects = [[
-                "featuredImage":"trainer1_1",
+                "featuredImage":"trainer1",
                 "name":"ИЛЬЯ СУПРУНЕНКО",
                 "category":"СПОРТИВНЫЕ ЕДИНОБОРСТВА",
                 "content":"Координатор направления единоборств федеральной сети фитнес клубов «X-FIT», мастер-тренер."
@@ -103,6 +103,7 @@ class TrainersVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
         return CGSizeMake(164, 200)
     }
     

@@ -17,6 +17,10 @@
 		5A7A20B01C91B4F50067F333 /* ServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A20AF1C91B4F50067F333 /* ServicesCell.swift */; };
 		5A7A20B21C91B6CE0067F333 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A20B11C91B6CE0067F333 /* Services.swift */; };
 		5A7A20B41C91B8990067F333 /* ServicesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A20B31C91B8990067F333 /* ServicesDetailVC.swift */; };
+		5A9893E21C92EBC000D54CD7 /* PhotoGalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9893E11C92EBC000D54CD7 /* PhotoGalleryVC.swift */; };
+		5A9893E41C92EEB500D54CD7 /* PhotoGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9893E31C92EEB500D54CD7 /* PhotoGalleryCell.swift */; };
+		5A9893E61C92F6C900D54CD7 /* OurSelfyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9893E51C92F6C900D54CD7 /* OurSelfyVC.swift */; };
+		5A9893E81C92F71400D54CD7 /* OurSelfyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9893E71C92F71400D54CD7 /* OurSelfyCell.swift */; };
 		5AB1FD671C90364C007334FB /* ViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1FD661C90364C007334FB /* ViewerVC.swift */; };
 		5AB1FD691C903F77007334FB /* LeftSideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1FD681C903F77007334FB /* LeftSideVC.swift */; };
 		5AB1FD6B1C90401F007334FB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1FD6A1C90401F007334FB /* MenuCell.swift */; };
@@ -51,6 +55,10 @@
 		5A7A20AF1C91B4F50067F333 /* ServicesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesCell.swift; sourceTree = "<group>"; };
 		5A7A20B11C91B6CE0067F333 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		5A7A20B31C91B8990067F333 /* ServicesDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesDetailVC.swift; sourceTree = "<group>"; };
+		5A9893E11C92EBC000D54CD7 /* PhotoGalleryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryVC.swift; sourceTree = "<group>"; };
+		5A9893E31C92EEB500D54CD7 /* PhotoGalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCell.swift; sourceTree = "<group>"; };
+		5A9893E51C92F6C900D54CD7 /* OurSelfyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OurSelfyVC.swift; sourceTree = "<group>"; };
+		5A9893E71C92F71400D54CD7 /* OurSelfyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OurSelfyCell.swift; sourceTree = "<group>"; };
 		5AB1FD661C90364C007334FB /* ViewerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerVC.swift; sourceTree = "<group>"; };
 		5AB1FD681C903F77007334FB /* LeftSideVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideVC.swift; sourceTree = "<group>"; };
 		5AB1FD6A1C90401F007334FB /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
@@ -166,6 +174,8 @@
 				5AB1FD6A1C90401F007334FB /* MenuCell.swift */,
 				5A7A20A81C91666C0067F333 /* TrainersCell.swift */,
 				5A7A20AF1C91B4F50067F333 /* ServicesCell.swift */,
+				5A9893E31C92EEB500D54CD7 /* PhotoGalleryCell.swift */,
+				5A9893E71C92F71400D54CD7 /* OurSelfyCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -196,6 +206,8 @@
 				5A7A20B31C91B8990067F333 /* ServicesDetailVC.swift */,
 				5A75425E1C92B7DA0024077E /* AboutVC.swift */,
 				5A7542601C92C2030024077E /* ContactsVC.swift */,
+				5A9893E11C92EBC000D54CD7 /* PhotoGalleryVC.swift */,
+				5A9893E51C92F6C900D54CD7 /* OurSelfyVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -332,16 +344,20 @@
 				5AB1FD6D1C9053DD007334FB /* MainMenuVC.swift in Sources */,
 				5A75425F1C92B7DA0024077E /* AboutVC.swift in Sources */,
 				9848719C1C8AEB920037BE70 /* RoundBtnViewStyle.swift in Sources */,
+				5A9893E61C92F6C900D54CD7 /* OurSelfyVC.swift in Sources */,
 				984871951C8ADAFC0037BE70 /* CategoryLabelBorder.swift in Sources */,
 				9848719A1C8AEAAC0037BE70 /* NewsCell.swift in Sources */,
 				5A7A20B01C91B4F50067F333 /* ServicesCell.swift in Sources */,
 				5A7542611C92C2030024077E /* ContactsVC.swift in Sources */,
 				5A7A20B21C91B6CE0067F333 /* Services.swift in Sources */,
+				5A9893E81C92F71400D54CD7 /* OurSelfyCell.swift in Sources */,
 				984871931C8ACCFD0037BE70 /* News.swift in Sources */,
 				5A7A20AE1C91AF2A0067F333 /* ServicesVC.swift in Sources */,
 				5A7A20A91C91666C0067F333 /* TrainersCell.swift in Sources */,
 				9862745F1C8C1956005B29AC /* NewsCategories.swift in Sources */,
+				5A9893E21C92EBC000D54CD7 /* PhotoGalleryVC.swift in Sources */,
 				5AB1FD691C903F77007334FB /* LeftSideVC.swift in Sources */,
+				5A9893E41C92EEB500D54CD7 /* PhotoGalleryCell.swift in Sources */,
 				5A7A20A51C9158620067F333 /* TrainersVC.swift in Sources */,
 				5A7A20B41C91B8990067F333 /* ServicesDetailVC.swift in Sources */,
 				984871901C8AAD4A0037BE70 /* PanelsViewBorder.swift in Sources */,

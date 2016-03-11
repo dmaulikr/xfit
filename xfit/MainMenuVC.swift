@@ -10,6 +10,7 @@ import UIKit
 
 class MainMenuVC: UIViewController {
     
+    @IBOutlet weak var scrllView: UIScrollView!
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
         self.evo_drawerController?.openDrawerGestureModeMask = .Custom
@@ -17,8 +18,6 @@ class MainMenuVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func NewsViewBtn(sender: AnyObject) {
@@ -29,6 +28,11 @@ class MainMenuVC: UIViewController {
         self.navigationController?.popViewControllerAnimated(true)
     }
     @IBAction func ServicesViewBtn(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    @IBAction func contactsViewBtn(sender: AnyObject) {
+        
         self.navigationController?.popViewControllerAnimated(true)
     }
 }
