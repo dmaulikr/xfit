@@ -12,14 +12,13 @@ class OurSelfyVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
         @IBOutlet weak var collection: UICollectionView!
         
-        let images = ["trainer1","trainer2","trainer3","trainer4","trainer5","trainer6"]
-        
         override func viewWillAppear(animated: Bool) {
             self.navigationController?.navigationBarHidden = true
             self.evo_drawerController?.openDrawerGestureModeMask = .All
         }
         
-        
+        var selfy = [Selfy]()
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             
@@ -28,16 +27,48 @@ class OurSelfyVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
         func parseData() {
             
+                    let objects = [[
+                        "featuredImg":"i1",
+                        "name":"MARIA CODANA"
+                    ],[
+                        "featuredImg":"i2",
+                        "name":"ALENA BORODINA"
+                    ],[
+                        "featuredImg":"i3",
+                        "name":"ALENA BORODINA"
+                    ],[
+                        "featuredImg":"i4",
+                        "name":"ALENA BORODINA"
+                    ],[
+                        "featuredImg":"i5",
+                        "name":"ALENA BORODINA"
+                    ],[
+                        "featuredImg":"i6",
+                        "name":"ALENA BORODINA"
+                    ],[
+                        "featuredImg":"i7",
+                        "name":"ALENA BORODINA"
+                    ]]
+            
+            for object in objects {
+                
+                let selfi = Selfy(dictionary: object)
+                
+                self.selfy.append(selfi)
+                
+            }
             
             self.collection.reloadData()
         }
-        
+    
         func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+            
+            let selfy = self.selfy[indexPath.row]
+            
             if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("OurSelfyCell", forIndexPath: indexPath) as? OurSelfyCell {
                 
-                let image = images[indexPath.row]
                 
-                cell.configureCell(image)
+                cell.configureCell(selfy)
                 
                 return cell
             } else {
@@ -47,14 +78,14 @@ class OurSelfyVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
         func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
             
-            let image = self.images[indexPath.row]
-            performSegueWithIdentifier("ViewerVC", sender: image)
+            let selfy = self.selfy[indexPath.row]
+            performSegueWithIdentifier("OurSelfyDetailVC", sender: selfy)
             
         }
         
         func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             
-            return self.images.count
+            return self.selfy.count
             
         }
         
@@ -81,10 +112,10 @@ class OurSelfyVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         }
         
         override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if segue.identifier == "ViewerVC" {
-                if let viewerVC = segue.destinationViewController as? ViewerVC {
-                    if let img = sender as? String {
-                        viewerVC.img = img
+            if segue.identifier == "OurSelfyDetailVC" {
+                if let detailVC = segue.destinationViewController as? OurSelfyDetailVC {
+                    if let selfy = sender as? Selfy {
+                        detailVC.selfy = selfy
                     }
                 }
             }

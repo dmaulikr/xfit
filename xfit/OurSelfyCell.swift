@@ -12,15 +12,23 @@ class OurSelfyCell: UICollectionViewCell {
     
     @IBOutlet weak var featuredImg: UIImageView!
     
+    private var _selfy: Selfy?
+    
+    var selfy: Selfy? {
+        return _selfy
+    }
+    
     override func drawRect(rect: CGRect) {
         featuredImg.clipsToBounds = true
     }
     
     
-    func configureCell(image:String) {
+    func configureCell(selfy:Selfy) {
         
-        if image != "" {
-            self.featuredImg.image = UIImage(named: image)
+        self._selfy = selfy
+        
+        if selfy.featuredImg != nil {
+            self.featuredImg.image = UIImage(named: selfy.featuredImg!)
         } else {
             self.featuredImg.hidden = true
         }
