@@ -19,6 +19,8 @@ class MainMenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
 
     @IBAction func NewsViewBtn(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
