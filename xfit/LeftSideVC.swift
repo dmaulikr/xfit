@@ -12,7 +12,7 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var menuItems:[String] = ["ГЛАВНАЯ","ЛИЧНЫЙ КАБИНЕТ","РАСПИСАНИЕ","НОВОСТИ","ЗАЧЕКИНИТЬСЯ","О КЛУБЕ","ФОТОТУР","УСЛУГИ","ТРЕНЕРА","НАШИ КЛИЕНТЫ","КОНТАКТЫ"];
+    var menuItems:[String] = ["ГЛАВНАЯ","ЛИЧНЫЙ КАБИНЕТ","РАСПИСАНИЕ","НОВОСТИ","ЗАЧЕКИНИТЬСЯ","О КЛУБЕ","ФОТОТУР","УСЛУГИ","ТРЕНЕРА","НАШИ СЕЛФИ","КОНТАКТЫ"];
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -83,6 +83,17 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             
             break;
             
+        case 2:
+            
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CalendarVC") as! CalendarVC
+            let centerNav = UINavigationController(rootViewController: centerViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.drawerController!.centerViewController = centerNav
+            appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
+            
+            break;
+            
         case 3:
             
             let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NewsVC") as! NewsVC
@@ -105,6 +116,17 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             
             break;
             
+        case 6:
+            
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PhotoGalleryVC") as! PhotoGalleryVC
+            let centerNav = UINavigationController(rootViewController: centerViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.drawerController!.centerViewController = centerNav
+            appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
+            
+            break;
+            
         case 7:
             
             let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ServicesVC") as! ServicesVC
@@ -119,6 +141,17 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         case 8:
             
             let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("TrainersVC") as! TrainersVC
+            let centerNav = UINavigationController(rootViewController: centerViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.drawerController!.centerViewController = centerNav
+            appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
+            
+            break;
+            
+        case 9:
+            
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("OurSelfyVC") as! OurSelfyVC
             let centerNav = UINavigationController(rootViewController: centerViewController)
             
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
