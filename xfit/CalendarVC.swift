@@ -11,6 +11,8 @@ import UIKit
 class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var weekView: CalendarWeekViewControllerView?
+    var selectedIndex = -1
+    let calendar = CalendarDayView.self
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +21,8 @@ class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         weekView = CalendarWeekViewControllerView(frame: CGRectMake(16, 130, view.frame.width, 44))
         view.addSubview(weekView!)
         
-        let calenderMenu = CalendarMenuView(frame: CGRectMake(4, 82, view.frame.width - 4, 22))
-        view.addSubview(calenderMenu)
+        let calendarMenu = CalendarMenuView(frame: CGRectMake(4, 82, view.frame.width - 4, 22))
+        view.addSubview(calendarMenu)
         
         
         tableView.dataSource = self
@@ -65,13 +67,13 @@ class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     "duration":"45 МИН."
                 ],[
                     "title":"LOW CORE",
-                    "content":"Доказано: занятия в воде отлично тренируют весь организм. Однако мы разработали программу, которая акцентирует нагрузки на, пожалуй, главный орган нашего тела – сердце. Регулярно посещая HEART-X, вы почувствуете, насколько легче стало переносить повседневные нагрузки. Тренировка проходит со  специальным оборудованием (пояса, перчатки)",
+                    "content":"Доказано: занятия в воде отлично тренируют весь организм. Однако мы разработали программу, которая акцентирует нагрузки на, пожалуй.",
                     "place":"ЗАЛ 1",
                     "time":"09:00",
                     "duration":"55 МИН."
                 ],[
                     "title":"PILATES MAT",
-                    "content":"Доказано: занятия в воде отлично тренируют весь организм. Однако мы разработали программу, которая акцентирует нагрузки на, пожалуй, главный орган нашего тела – сердце. Регулярно посещая HEART-X, вы почувствуете, насколько легче стало переносить повседневные нагрузки. Тренировка проходит со  специальным оборудованием (пояса, перчатки)",
+                    "content":"Тренировка проходит со  специальным оборудованием (пояса, перчатки)",
                     "place":"ЗАЛ 1",
                     "time":"10:00",
                     "duration":"55 МИН."
@@ -179,16 +181,39 @@ class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         
         func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-            return 78
+            return tableView.rowHeight
         }
-        
+
+    
+        func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+            if selectedIndex == indexPath.row {
+                return UITableViewAutomaticDimension
+            } else {
+                return 58
+            }
+        }
+    
         func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
             
-//            let news = self.schedule[indexPath.row]
-//            performSegueWithIdentifier("ServicesDetailVC", sender: news)
+            if selectedIndex == indexPath.row {
+                selectedIndex = -1
+                tableView.beginUpdates()
+                tableView.endUpdates()
+            } else
             
+            if selectedIndex != -1 {
+                selectedIndex = indexPath.row
+                tableView.beginUpdates()
+                tableView.endUpdates()
+            } else {
+            
+                selectedIndex = indexPath.row
+                tableView.beginUpdates()
+                tableView.endUpdates()
+            
+            }
         }
-        
+    
         
         @IBAction func openMenu(sender: AnyObject) {
             self.evo_drawerController?.toggleDrawerSide(.Left, animated: true, completion: nil)

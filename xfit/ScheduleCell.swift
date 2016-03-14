@@ -14,6 +14,8 @@ class ScheduleCell: UITableViewCell {
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var placeLbl: UILabel!
     @IBOutlet weak var durationLbl: UILabel!
+    @IBOutlet weak var contentWrap: UIView!
+    @IBOutlet weak var contentLbl: UILabel!
         
         private var _schedule: Schedule?
         
@@ -34,6 +36,12 @@ class ScheduleCell: UITableViewCell {
                 self.titleLbl.text = title.uppercaseString
             } else {
                 self.titleLbl.text = nil
+            }
+            
+            if let content = schedule.content where content != "" {
+                self.contentLbl.text = content
+            } else {
+                self.contentLbl.text = nil
             }
             
             if let time = schedule.time where time != "" {
