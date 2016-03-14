@@ -8,16 +8,27 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>DrawerController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-xfit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -33,6 +44,16 @@
 			<true/>
 		</dict>
 		<key>BCA053B6430690326435042FEB61B458</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D083682CF36071495A66680CF5CE2BA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9C94BD1FB23C0E4D37B2BBECB37CCDD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

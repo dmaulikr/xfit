@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O6g-NF-py5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O6g-NF-py5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -208,17 +208,17 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mqv-F2-G73">
-                                                <rect key="frame" x="115" y="98" width="150" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mqv-F2-G73">
+                                                <rect key="frame" x="115" y="98" width="146" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnj-xM-5R5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnj-xM-5R5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="16"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9kZ-h1-nxT">
-                                                        <rect key="frame" x="67" y="0.0" width="83" height="50"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kZ-h1-nxT">
+                                                        <rect key="frame" x="67" y="0.0" width="79" height="16"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X FIT МОНАРХ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tA-Dt-TU4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="79" height="16"/>
@@ -1034,8 +1034,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRJ-Dp-ZbW" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5ZU-nI-izd">
-                                                <rect key="frame" x="16" y="12" width="173" height="24"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5ZU-nI-izd">
+                                                <rect key="frame" x="16" y="12" width="169" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBQ-Ap-wMd">
                                                         <rect key="frame" x="0.0" y="0.0" width="74" height="24"/>
@@ -1043,8 +1043,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9U4-i4-wgI">
-                                                        <rect key="frame" x="77" y="0.0" width="96" height="24"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9U4-i4-wgI">
+                                                        <rect key="frame" x="77" y="0.0" width="92" height="24"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X FIT МОНАРХ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTO-tn-AP3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="24"/>
@@ -1803,17 +1803,17 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hds-60-fQC">
-                                                <rect key="frame" x="115" y="82" width="150" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hds-60-fQC">
+                                                <rect key="frame" x="115" y="82" width="146" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-fC-muJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-fC-muJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="16"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tWQ-Dj-2Uz">
-                                                        <rect key="frame" x="67" y="0.0" width="83" height="50"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWQ-Dj-2Uz">
+                                                        <rect key="frame" x="67" y="0.0" width="79" height="16"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X FIT МОНАРХ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Da-CW-4Zi">
                                                                 <rect key="frame" x="0.0" y="0.0" width="79" height="16"/>
@@ -4843,10 +4843,10 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KoY-7J-4CG">
-                                                            <rect key="frame" x="75" y="10" width="59" height="29"/>
+                                                            <rect key="frame" x="75" y="10" width="59" height="28"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEART-X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-4u-8yF">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="59" height="15"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="59" height="14"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="16" id="tN5-go-qvH"/>
                                                                     </constraints>
@@ -4860,7 +4860,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="БАССЕЙН" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVR-fV-o0H">
-                                                                    <rect key="frame" x="0.0" y="19" width="59" height="10"/>
+                                                                    <rect key="frame" x="0.0" y="18" width="59" height="10"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="10" id="77e-UO-DEa"/>
                                                                     </constraints>
@@ -4880,11 +4880,11 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cE5-MC-zlk">
-                                                            <rect key="frame" x="16" y="59" width="311" height="189"/>
+                                                            <rect key="frame" x="16" y="58" width="311" height="189"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2R-wv-8L4">
                                                                     <rect key="frame" x="0.0" y="0.0" width="311" height="115"/>
-                                                                    <mutableString key="text">Доказано: занятия в воде отлично тренируют весь организм. Однако мы разработали программу, которая акцентирует нагрузки на, пожалуй, главный орган нашего тела – сердце. Регулярно посещая HEART-X, вы почувствуете, насколько легче стало переносить повседневные нагрузки. Тренировка проходит со  специальным оборудованием (пояса, перчатки)</mutableString>
+                                                                    <string key="text">Доказано: занятия в воде отлично тренируют весь организм. Однако мы разработали программу, которая акцентирует нагрузки на, пожалуй, главный орган нашего тела – сердце. Регулярно посещая HEART-X, вы почувствуете, насколько легче стало переносить повседневные нагрузки. Тренировка проходит со  специальным оборудованием (пояса, перчатки)</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -4992,14 +4992,14 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="Gg2-OM-frJ"/>
+                                                    <exclude reference="N7i-nj-nx1"/>
+                                                    <exclude reference="Ny7-z1-ex0"/>
                                                     <exclude reference="DPo-IH-udh"/>
                                                     <exclude reference="Igr-bj-5SV"/>
                                                     <exclude reference="L8k-Er-y4c"/>
                                                     <exclude reference="N4m-pc-XIK"/>
                                                     <exclude reference="i6g-Gp-yAR"/>
-                                                    <exclude reference="Gg2-OM-frJ"/>
-                                                    <exclude reference="N7i-nj-nx1"/>
-                                                    <exclude reference="Ny7-z1-ex0"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>

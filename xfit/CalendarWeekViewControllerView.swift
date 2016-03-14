@@ -8,6 +8,7 @@ protocol CalendarWeekViewControllerDelegate {
     func nextWeekView()
     func prevWeekView()
     func afterAutoScroll()
+    func daySelect()
 }
 
 class CalendarWeekViewControllerView: UIView, UIScrollViewDelegate, CalendarWeekViewDelegate {
@@ -206,6 +207,7 @@ class CalendarWeekViewControllerView: UIView, UIScrollViewDelegate, CalendarWeek
     
     func selectedDay(dayView: CalendarDayView) {
         selectedDay = dayView.date!
+        delegate?.daySelect()
     }
     
     func unSelectedDay(dayView: CalendarDayView) {

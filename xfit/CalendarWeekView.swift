@@ -67,8 +67,6 @@ class CalendarWeekView: UIView, CalendarDayViewDelegate {
     func unSelectedDay(dayView: CalendarDayView) {
         
     }
-    func showDay() {
-    }
     
     func selectFirstDayOfWeek() {
         dayViewOfWeek[0].isSelectedDay = true

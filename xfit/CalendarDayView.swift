@@ -6,12 +6,12 @@ import UIKit
 protocol CalendarDayViewDelegate {
     func selectedDay(dayView: CalendarDayView)
     func unSelectedDay(dayView: CalendarDayView)
-    func showDay()
 }
 
 class CalendarDayView: UIView {
     
     var delegate: CalendarDayViewDelegate?
+    
     var dateLabel: UILabel?
     
     var innerBorder:UIView?
@@ -106,10 +106,7 @@ class CalendarDayView: UIView {
         } else {
             setSelectedDay()
             isSelectedDay = true
-            delegate?.selectedDay(self)
-            
-            print(delegate?.showDay())
-            delegate?.showDay()
+//            delegate?.selectedDay(self)
 //            print(date!.description)
             
         }
