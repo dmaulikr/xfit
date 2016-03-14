@@ -34,6 +34,7 @@ class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
     }
     
     func daySelect() {
+        selectedIndex = -1
         let range = NSMakeRange(0, self.tableView.numberOfSections)
         let sections = NSIndexSet(indexesInRange: range)
         self.tableView.reloadSections(sections, withRowAnimation: .Left)
