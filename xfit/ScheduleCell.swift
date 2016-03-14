@@ -38,8 +38,15 @@ class ScheduleCell: UITableViewCell {
                 self.titleLbl.text = nil
             }
             
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = 8
+            
             if let content = schedule.content where content != "" {
-                self.contentLbl.text = content
+                
+                let attrString = NSMutableAttributedString(string: content)
+                attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+                self.contentLbl.attributedText = attrString
+                
             } else {
                 self.contentLbl.text = nil
             }

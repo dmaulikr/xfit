@@ -6,6 +6,7 @@ import UIKit
 protocol CalendarDayViewDelegate {
     func selectedDay(dayView: CalendarDayView)
     func unSelectedDay(dayView: CalendarDayView)
+    func showDay()
 }
 
 class CalendarDayView: UIView {
@@ -67,9 +68,7 @@ class CalendarDayView: UIView {
         dateLabel!.font = normalDayFont
         dateLabel!.layer.zPosition = 2
         addSubview(dateLabel!)
-        
-        
-        
+
         
         innerBorder = UIView(frame: CGRectMake(0, 0, dateLabel!.frame.width, dateLabel!.frame.height))
         innerBorder!.layer.borderWidth = 1.0
@@ -101,14 +100,18 @@ class CalendarDayView: UIView {
     
     func selectDay(sender: UITapGestureRecognizer) {
         if isSelectedDay {
-            unSetSelectedDay()
-            isSelectedDay = false
-            delegate?.unSelectedDay(self)
+//            unSetSelectedDay()
+//            isSelectedDay = false
+//            delegate?.unSelectedDay(self)
         } else {
             setSelectedDay()
             isSelectedDay = true
             delegate?.selectedDay(self)
+            
+            print(delegate?.showDay())
+            delegate?.showDay()
 //            print(date!.description)
+            
         }
     }
     

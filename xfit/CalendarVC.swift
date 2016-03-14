@@ -8,11 +8,11 @@
 
 import UIKit
 
-class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate, CalendarDayViewDelegate {
 
     var weekView: CalendarWeekViewControllerView?
     var selectedIndex = -1
-    let calendar = CalendarDayView.self
+    var results = [UILabel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,20 @@ class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     }
     
+    func selectedDay(dayView: CalendarDayView) {
+        
+    }
     
+    func unSelectedDay(dayView: CalendarDayView) {
+        
+    }
+    
+    func showDay() {
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesInRange: range)
+        self.tableView.reloadSections(sections, withRowAnimation: .Left)
+        
+    }
     
 //    func scrollToPrevDay(sender: UITapGestureRecognizer) {
 //        print("prev")
