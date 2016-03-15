@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'xfit' do
 pod 'DrawerController', '~> 1.0'
+pod 'ImageSlideshow', '~> 0.3'
 end

@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C95545F062605A82573D5645E33EAAE /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71D12840F347852F6117FDD74A2A4A0 /* DrawerController.swift */; };
-		2075BE989A20851497A9BB2821FEDB09 /* DrawerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD75B16F98C4C5E871D30C434DBB3AB /* DrawerBarButtonItem.swift */; };
-		27FB55C7BFB97B8B5BC2A7C1E2DF2704 /* DrawerVisualState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A909390118A04D7DACFFFD433FA17F /* DrawerVisualState.swift */; };
-		2B12BBABDC2BDA3A1F9F47E5197E6896 /* Pods-xfit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA095F84D13D0596553F8DAF00446A45 /* Pods-xfit-dummy.m */; };
-		2DC395C1AC0199F1CAEBBFA681B25EA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		036D2866E949C9FC2DA80879D80F50E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		0C95545F062605A82573D5645E33EAAE /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC69A1C170DEF42B4D50C325B6FEEB /* DrawerController.swift */; };
+		179A8F22EE4D1DF8C2F8D9A6B82F452B /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB628F0D4C67CCBA806F4F887150FD /* InputSource.swift */; };
+		18B4A73A3E7B3C8B65AAECAC5C34D05F /* ImageSlideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F5B433C5DB82A99BAF357AE4564CC /* ImageSlideshow.swift */; };
+		1BCAC781B14DC6D735F92BA8E6A07EF0 /* ImageSlideshow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A293B1ADBED43F95646DC9C6E7336EF /* ImageSlideshow-dummy.m */; };
+		2075BE989A20851497A9BB2821FEDB09 /* DrawerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED15128414BFAA0DEFE3A4AD7B2B3A8 /* DrawerBarButtonItem.swift */; };
+		27FB55C7BFB97B8B5BC2A7C1E2DF2704 /* DrawerVisualState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EF02A5CE3BE25F3F6F4144DB0EFEA2 /* DrawerVisualState.swift */; };
 		329EC90445CA47C60A52AF4A94D3D194 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
-		4ACD8DCC02A289086390DCFFA095C5AB /* Pods-xfit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124869AA396E48401A5651673C4A5B44 /* Pods-xfit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		418C19AB6C4A5CC756D6FD4D55B6D985 /* ImageSlideshowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546903C441FBE0A6F2A096C3E3DADFE3 /* ImageSlideshowItem.swift */; };
 		5DBF2789F0007DDC069B63DA9A2C6213 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
-		6CF92D21FDC1951641284136BDFF88AA /* DrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06AD08EE9B922CA32CE72829FCA9C390 /* DrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F60D52F733C26F37832E3A20F162943 /* AnimatedMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8450ECBA419C032C78EC1FDC8848890 /* AnimatedMenuButton.swift */; };
-		A3D8574FEFC96B6E5CCE5EAFD1086DA1 /* DrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2205F2E998BA1BD7EBF574E3465328 /* DrawerController-dummy.m */; };
+		6241106CD6A5100F250CB851FA48501E /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23039AF23EFC588E09E33845F44BE32 /* ZoomAnimatedTransitioning.swift */; };
+		6CF92D21FDC1951641284136BDFF88AA /* DrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F18251B695D919E3943111315478D541 /* DrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90CD0EA32EF22C4249AEF3AC09D0F58B /* Pods-xfit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA095F84D13D0596553F8DAF00446A45 /* Pods-xfit-dummy.m */; };
+		9ED04DC140774EFE785AFFD5AA99DE14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		9F60D52F733C26F37832E3A20F162943 /* AnimatedMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77514A568BC57969E97633AEA109D773 /* AnimatedMenuButton.swift */; };
+		A3D8574FEFC96B6E5CCE5EAFD1086DA1 /* DrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A096FC36BA956FDDC37B007595D0C56 /* DrawerController-dummy.m */; };
+		AD7D59BAC98ADAF22B9DFCF23F7413BA /* ImageSlideshow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7405B43B24F5795835FD291991198E8F /* ImageSlideshow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B28D755318627B3351DD5F2379E90580 /* UIImage+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6A47C6DBD1B35154FDD7CEA84B7AA /* UIImage+AspectFit.swift */; };
+		B2E598B88BE8D1168EC64C01E92ADF8B /* ic_cross_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 113EF12E2501663BDA06B291961F552E /* ic_cross_white@3x.png */; };
+		CBA64BEB17A61F0825DEC562F1FA8142 /* Pods-xfit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124869AA396E48401A5651673C4A5B44 /* Pods-xfit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5DD1EA43E3E1D99DCD7520066B496D7 /* ImageSlideshow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 858058BB73F463F84A6A8A21547FFD83 /* ImageSlideshow.bundle */; };
+		E61918E735366F04A6F72C53A1DCE5FE /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C030EE3320D7FFD5CFD052859F6D3 /* FullScreenSlideshowViewController.swift */; };
+		E81340944DE8C099841EC1EF2EA77C6F /* ic_cross_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB3EF1636BEC09234D26047E585E3AC /* ic_cross_white@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E167B146A6AED66611951E5D06166FD /* PBXContainerItemProxy */ = {
+		1C0EE30C7BD4A5002EDD12793B9878E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB99E25C67C08C717B06E8F159B57906;
+			remoteInfo = ImageSlideshow;
+		};
+		262A67D5451E247C99F7FF47B1B8E31D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BDBFB88CA1225230D8EA9110ABF474D;
+			remoteInfo = "ImageSlideshow-ImageSlideshow";
+		};
+		F272391EBFCB26A6123303F1BE1423C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -31,31 +57,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06AD08EE9B922CA32CE72829FCA9C390 /* DrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerController-umbrella.h"; sourceTree = "<group>"; };
+		113EF12E2501663BDA06B291961F552E /* ic_cross_white@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@3x.png"; path = "Pod/Assets/ic_cross_white@3x.png"; sourceTree = "<group>"; };
 		124869AA396E48401A5651673C4A5B44 /* Pods-xfit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-xfit-umbrella.h"; sourceTree = "<group>"; };
+		13A0E809B912B0D68548CF75224D12AC /* ImageSlideshow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-prefix.pch"; sourceTree = "<group>"; };
 		14D566A2DDEDD70F8BF502A85F5D64FA /* Pods-xfit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-xfit.release.xcconfig"; sourceTree = "<group>"; };
+		1D52DC7D42A29A6ADED197C415AFEB0C /* ImageSlideshow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ImageSlideshow.modulemap; sourceTree = "<group>"; };
+		21AC69A1C170DEF42B4D50C325B6FEEB /* DrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerController.swift; path = DrawerController/DrawerController.swift; sourceTree = "<group>"; };
 		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		38B7A6A959D8A7A8D4FC3B82AAA91F93 /* DrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87A909390118A04D7DACFFFD433FA17F /* DrawerVisualState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerVisualState.swift; path = DrawerController/DrawerVisualState.swift; sourceTree = "<group>"; };
+		36C4CA5D33C81BC75E70414EF821BE39 /* DrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A096FC36BA956FDDC37B007595D0C56 /* DrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DrawerController-dummy.m"; sourceTree = "<group>"; };
+		4403D4C209AF888AC3BCE9CCA86424A7 /* ImageSlideshow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageSlideshow.xcconfig; sourceTree = "<group>"; };
+		546903C441FBE0A6F2A096C3E3DADFE3 /* ImageSlideshowItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshowItem.swift; path = Pod/Classes/Core/ImageSlideshowItem.swift; sourceTree = "<group>"; };
+		5D3C030EE3320D7FFD5CFD052859F6D3 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullScreenSlideshowViewController.swift; path = Pod/Classes/Core/FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
+		6EB3EF1636BEC09234D26047E585E3AC /* ic_cross_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@2x.png"; path = "Pod/Assets/ic_cross_white@2x.png"; sourceTree = "<group>"; };
+		6F510BF13EFA4AB31669FA800928F77D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7405B43B24F5795835FD291991198E8F /* ImageSlideshow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-umbrella.h"; sourceTree = "<group>"; };
+		77514A568BC57969E97633AEA109D773 /* AnimatedMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedMenuButton.swift; path = DrawerController/AnimatedMenuButton.swift; sourceTree = "<group>"; };
+		84D340CD996801C9FC21D60CF8813615 /* DrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DrawerController.xcconfig; sourceTree = "<group>"; };
+		858058BB73F463F84A6A8A21547FFD83 /* ImageSlideshow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageSlideshow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		891B23DB379E7AA4430A8B633BA7DC8A /* Pods-xfit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-xfit-frameworks.sh"; sourceTree = "<group>"; };
-		A8450ECBA419C032C78EC1FDC8848890 /* AnimatedMenuButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedMenuButton.swift; path = DrawerController/AnimatedMenuButton.swift; sourceTree = "<group>"; };
+		89808058E38E69095E5EA9D3F75F9E4B /* ImageSlideshow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageSlideshow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB6A47C6DBD1B35154FDD7CEA84B7AA /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AspectFit.swift"; path = "Pod/Classes/Core/UIImage+AspectFit.swift"; sourceTree = "<group>"; };
+		9A293B1ADBED43F95646DC9C6E7336EF /* ImageSlideshow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageSlideshow-dummy.m"; sourceTree = "<group>"; };
 		AD25D6928E795378594838566501591B /* Pods-xfit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-xfit-resources.sh"; sourceTree = "<group>"; };
-		AF2205F2E998BA1BD7EBF574E3465328 /* DrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DrawerController-dummy.m"; sourceTree = "<group>"; };
-		AFD75B16F98C4C5E871D30C434DBB3AB /* DrawerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerBarButtonItem.swift; path = DrawerController/DrawerBarButtonItem.swift; sourceTree = "<group>"; };
 		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		B1E9280FC9A2E8C0CC6872AFF6D17C8A /* Pods-xfit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-xfit-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B96BCD7D7FCFE4EA6057D20D54ACDD13 /* DrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DrawerController.xcconfig; sourceTree = "<group>"; };
+		B99F5B433C5DB82A99BAF357AE4564CC /* ImageSlideshow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshow.swift; path = Pod/Classes/Core/ImageSlideshow.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C07EEC59AD00F4C14E20091FC20D8F01 /* DrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerController-prefix.pch"; sourceTree = "<group>"; };
+		C23039AF23EFC588E09E33845F44BE32 /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimatedTransitioning.swift; path = Pod/Classes/Core/ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		C2477466FA919A97261DB04B7D75DC60 /* Pods_xfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C4EBFBE2D325929211313637B04815 /* Pods-xfit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-xfit.modulemap"; sourceTree = "<group>"; };
-		C895D72A7777AE0F100FEF3D4E444DF8 /* DrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerController-prefix.pch"; sourceTree = "<group>"; };
 		C925C537367270A8FA20C2464C047ECD /* Pods-xfit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-xfit-acknowledgements.plist"; sourceTree = "<group>"; };
 		CA095F84D13D0596553F8DAF00446A45 /* Pods-xfit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-xfit-dummy.m"; sourceTree = "<group>"; };
-		CA6B6F9AC385E8CEF585C4A10383E5F1 /* DrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DrawerController.modulemap; sourceTree = "<group>"; };
-		D71D12840F347852F6117FDD74A2A4A0 /* DrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerController.swift; path = DrawerController/DrawerController.swift; sourceTree = "<group>"; };
-		DBD8D5AA4E137B4CFAFE7B34858053BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD1D7662C60B56268D3C092B38E23CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED15128414BFAA0DEFE3A4AD7B2B3A8 /* DrawerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerBarButtonItem.swift; path = DrawerController/DrawerBarButtonItem.swift; sourceTree = "<group>"; };
+		DADB628F0D4C67CCBA806F4F887150FD /* InputSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSource.swift; path = Pod/Classes/Core/InputSource.swift; sourceTree = "<group>"; };
 		EB19E76FDD2F0768D54DFCA8924741FD /* Pods-xfit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-xfit.debug.xcconfig"; sourceTree = "<group>"; };
-		EB3463C08D1A3E5CC3F0BAE3B6D16202 /* Pods_xfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7E4BCF0468539F26516F1F42CF5AE4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18251B695D919E3943111315478D541 /* DrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerController-umbrella.h"; sourceTree = "<group>"; };
+		F2EF02A5CE3BE25F3F6F4144DB0EFEA2 /* DrawerVisualState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerVisualState.swift; path = DrawerController/DrawerVisualState.swift; sourceTree = "<group>"; };
+		F9DC7C5829EE55F6B664F601F059BA3C /* DrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DrawerController.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,17 +110,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		558A9F8EAA3BCD7F75505623485016EC /* Frameworks */ = {
+		1C173144CEB2823209F50FD43F480FA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC395C1AC0199F1CAEBBFA681B25EA0 /* Foundation.framework in Frameworks */,
+				9ED04DC140774EFE785AFFD5AA99DE14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9311CAD10EAF270D47F0625795A16D97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27779F5CD7C85E360D926652696D5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036D2866E949C9FC2DA80879D80F50E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F60952B9A5D382673EA5E4660A13C8 /* DrawerVisualStates */ = {
+			isa = PBXGroup;
+			children = (
+				77514A568BC57969E97633AEA109D773 /* AnimatedMenuButton.swift */,
+				CED15128414BFAA0DEFE3A4AD7B2B3A8 /* DrawerBarButtonItem.swift */,
+				F2EF02A5CE3BE25F3F6F4144DB0EFEA2 /* DrawerVisualState.swift */,
+			);
+			name = DrawerVisualStates;
+			sourceTree = "<group>";
+		};
 		10AF410302C4E0E2C336AF7AF0A11063 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,12 +154,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		15F89CB7185B7EDCB94AA6CC5C605413 /* Pods */ = {
+		217E89191CEF7B3879D28A725EA9BA90 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A50FBA35D13E87402E477215E38E1A04 /* DrawerController */,
+				78F4DCC9DA17CBD25DEB159F1A8CB956 /* DrawerController */,
+				F509FF73FC5BF848A6D2AF99CBF8884D /* ImageSlideshow */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		32479F2F80B7EDF2A696010389947B51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D52DC7D42A29A6ADED197C415AFEB0C /* ImageSlideshow.modulemap */,
+				4403D4C209AF888AC3BCE9CCA86424A7 /* ImageSlideshow.xcconfig */,
+				9A293B1ADBED43F95646DC9C6E7336EF /* ImageSlideshow-dummy.m */,
+				13A0E809B912B0D68548CF75224D12AC /* ImageSlideshow-prefix.pch */,
+				7405B43B24F5795835FD291991198E8F /* ImageSlideshow-umbrella.h */,
+				CCD1D7662C60B56268D3C092B38E23CD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ImageSlideshow";
+			sourceTree = "<group>";
+		};
+		382ED1CA8EA0E09E21E283A8D4F9C264 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				21AC69A1C170DEF42B4D50C325B6FEEB /* DrawerController.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
@@ -130,31 +220,39 @@
 			path = "Target Support Files/Pods-xfit";
 			sourceTree = "<group>";
 		};
-		5DAAA6BAE93C0C3E96997B509486E000 /* Core */ = {
+		630F73DCEE246DA7758A6DF599EA1895 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D71D12840F347852F6117FDD74A2A4A0 /* DrawerController.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		7B5FD896065391447FD694FE28C1BDD7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				38B7A6A959D8A7A8D4FC3B82AAA91F93 /* DrawerController.framework */,
-				EB3463C08D1A3E5CC3F0BAE3B6D16202 /* Pods_xfit.framework */,
+				36C4CA5D33C81BC75E70414EF821BE39 /* DrawerController.framework */,
+				858058BB73F463F84A6A8A21547FFD83 /* ImageSlideshow.bundle */,
+				89808058E38E69095E5EA9D3F75F9E4B /* ImageSlideshow.framework */,
+				C2477466FA919A97261DB04B7D75DC60 /* Pods_xfit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BC7C7C1F02CCF8F85D0F608033B48C0 /* DrawerVisualStates */ = {
+		6F648A6F48FD4BC8742198445A786FC8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A8450ECBA419C032C78EC1FDC8848890 /* AnimatedMenuButton.swift */,
-				AFD75B16F98C4C5E871D30C434DBB3AB /* DrawerBarButtonItem.swift */,
-				87A909390118A04D7DACFFFD433FA17F /* DrawerVisualState.swift */,
+				5D3C030EE3320D7FFD5CFD052859F6D3 /* FullScreenSlideshowViewController.swift */,
+				B99F5B433C5DB82A99BAF357AE4564CC /* ImageSlideshow.swift */,
+				546903C441FBE0A6F2A096C3E3DADFE3 /* ImageSlideshowItem.swift */,
+				DADB628F0D4C67CCBA806F4F887150FD /* InputSource.swift */,
+				8DB6A47C6DBD1B35154FDD7CEA84B7AA /* UIImage+AspectFit.swift */,
+				C23039AF23EFC588E09E33845F44BE32 /* ZoomAnimatedTransitioning.swift */,
+				A0CFA58B741CF182D73AFA9EB039ED20 /* Resources */,
 			);
-			name = DrawerVisualStates;
+			name = Core;
+			sourceTree = "<group>";
+		};
+		78F4DCC9DA17CBD25DEB159F1A8CB956 /* DrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				382ED1CA8EA0E09E21E283A8D4F9C264 /* Core */,
+				01F60952B9A5D382673EA5E4660A13C8 /* DrawerVisualStates */,
+				AF6F1DAA544BCF5F40D4B7332E05328F /* Support Files */,
+			);
+			path = DrawerController;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -162,44 +260,60 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				15F89CB7185B7EDCB94AA6CC5C605413 /* Pods */,
-				7B5FD896065391447FD694FE28C1BDD7 /* Products */,
+				217E89191CEF7B3879D28A725EA9BA90 /* Pods */,
+				630F73DCEE246DA7758A6DF599EA1895 /* Products */,
 				10AF410302C4E0E2C336AF7AF0A11063 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		946BC333DF9BB82804D09F920A538808 /* Support Files */ = {
+		A0CFA58B741CF182D73AFA9EB039ED20 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CA6B6F9AC385E8CEF585C4A10383E5F1 /* DrawerController.modulemap */,
-				B96BCD7D7FCFE4EA6057D20D54ACDD13 /* DrawerController.xcconfig */,
-				AF2205F2E998BA1BD7EBF574E3465328 /* DrawerController-dummy.m */,
-				C895D72A7777AE0F100FEF3D4E444DF8 /* DrawerController-prefix.pch */,
-				06AD08EE9B922CA32CE72829FCA9C390 /* DrawerController-umbrella.h */,
-				DBD8D5AA4E137B4CFAFE7B34858053BD /* Info.plist */,
+				6EB3EF1636BEC09234D26047E585E3AC /* ic_cross_white@2x.png */,
+				113EF12E2501663BDA06B291961F552E /* ic_cross_white@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AF6F1DAA544BCF5F40D4B7332E05328F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9DC7C5829EE55F6B664F601F059BA3C /* DrawerController.modulemap */,
+				84D340CD996801C9FC21D60CF8813615 /* DrawerController.xcconfig */,
+				3A096FC36BA956FDDC37B007595D0C56 /* DrawerController-dummy.m */,
+				C07EEC59AD00F4C14E20091FC20D8F01 /* DrawerController-prefix.pch */,
+				F18251B695D919E3943111315478D541 /* DrawerController-umbrella.h */,
+				6F510BF13EFA4AB31669FA800928F77D /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DrawerController";
 			sourceTree = "<group>";
 		};
-		A50FBA35D13E87402E477215E38E1A04 /* DrawerController */ = {
+		F509FF73FC5BF848A6D2AF99CBF8884D /* ImageSlideshow */ = {
 			isa = PBXGroup;
 			children = (
-				5DAAA6BAE93C0C3E96997B509486E000 /* Core */,
-				7BC7C7C1F02CCF8F85D0F608033B48C0 /* DrawerVisualStates */,
-				946BC333DF9BB82804D09F920A538808 /* Support Files */,
+				6F648A6F48FD4BC8742198445A786FC8 /* Core */,
+				32479F2F80B7EDF2A696010389947B51 /* Support Files */,
 			);
-			path = DrawerController;
+			path = ImageSlideshow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A0869DEDD59567FFFB026A192B4C6CFE /* Headers */ = {
+		218F766A764E324D492B933ABA2D0131 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ACD8DCC02A289086390DCFFA095C5AB /* Pods-xfit-umbrella.h in Headers */,
+				AD7D59BAC98ADAF22B9DFCF23F7413BA /* ImageSlideshow-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753F99A8CF8ED3D5CB9C59EEB07EEF7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA64BEB17A61F0825DEC562F1FA8142 /* Pods-xfit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +328,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3BDBFB88CA1225230D8EA9110ABF474D /* ImageSlideshow-ImageSlideshow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81B0A2F0373D517A7EB2C15687CDC178 /* Build configuration list for PBXNativeTarget "ImageSlideshow-ImageSlideshow" */;
+			buildPhases = (
+				28AE5DE0FD56048528731E0F8C28B442 /* Sources */,
+				9311CAD10EAF270D47F0625795A16D97 /* Frameworks */,
+				0790E3151C97E881CB17E3DF7BA09C89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImageSlideshow-ImageSlideshow";
+			productName = "ImageSlideshow-ImageSlideshow";
+			productReference = 858058BB73F463F84A6A8A21547FFD83 /* ImageSlideshow.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		95F32F197C480391A9593AB01DA9FE48 /* Pods-xfit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2099185882EF4CFECA423A5B6E6251F0 /* Build configuration list for PBXNativeTarget "Pods-xfit" */;
+			buildPhases = (
+				F538C14BB37E04E8760B0B1953F078D3 /* Sources */,
+				1C173144CEB2823209F50FD43F480FA6 /* Frameworks */,
+				753F99A8CF8ED3D5CB9C59EEB07EEF7E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87B6D515BB8D3DCD34DBC6696D0DA2BF /* PBXTargetDependency */,
+				6F39E45CE6B9B438F1C538370F657B32 /* PBXTargetDependency */,
+			);
+			name = "Pods-xfit";
+			productName = "Pods-xfit";
+			productReference = C2477466FA919A97261DB04B7D75DC60 /* Pods_xfit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D083682CF36071495A66680CF5CE2BA5 /* DrawerController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28FD41691DFE829395760CA88949DA92 /* Build configuration list for PBXNativeTarget "DrawerController" */;
@@ -228,25 +378,26 @@
 			);
 			name = DrawerController;
 			productName = DrawerController;
-			productReference = 38B7A6A959D8A7A8D4FC3B82AAA91F93 /* DrawerController.framework */;
+			productReference = 36C4CA5D33C81BC75E70414EF821BE39 /* DrawerController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E9C94BD1FB23C0E4D37B2BBECB37CCDD /* Pods-xfit */ = {
+		DB99E25C67C08C717B06E8F159B57906 /* ImageSlideshow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B926BC720946460CF4AD05BDE9CE4D8A /* Build configuration list for PBXNativeTarget "Pods-xfit" */;
+			buildConfigurationList = 399A38DC8DBB03A2053E651C060ED2F6 /* Build configuration list for PBXNativeTarget "ImageSlideshow" */;
 			buildPhases = (
-				22B419B6AF481E2831EE3885BBE656D0 /* Sources */,
-				558A9F8EAA3BCD7F75505623485016EC /* Frameworks */,
-				A0869DEDD59567FFFB026A192B4C6CFE /* Headers */,
+				A1E9921341667ABB230FF2997D74AC14 /* Sources */,
+				A27779F5CD7C85E360D926652696D5EF /* Frameworks */,
+				0F5941ABD18D69E172056480EA3AF3FF /* Resources */,
+				218F766A764E324D492B933ABA2D0131 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C52886158AE7142B55BFD0BC6E9C0579 /* PBXTargetDependency */,
+				DDEEED2D93B8323AB0901A3D99080AF6 /* PBXTargetDependency */,
 			);
-			name = "Pods-xfit";
-			productName = "Pods-xfit";
-			productReference = EB3463C08D1A3E5CC3F0BAE3B6D16202 /* Pods_xfit.framework */;
+			name = ImageSlideshow;
+			productName = ImageSlideshow;
+			productReference = 89808058E38E69095E5EA9D3F75F9E4B /* ImageSlideshow.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -266,15 +417,37 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7B5FD896065391447FD694FE28C1BDD7 /* Products */;
+			productRefGroup = 630F73DCEE246DA7758A6DF599EA1895 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D083682CF36071495A66680CF5CE2BA5 /* DrawerController */,
-				E9C94BD1FB23C0E4D37B2BBECB37CCDD /* Pods-xfit */,
+				DB99E25C67C08C717B06E8F159B57906 /* ImageSlideshow */,
+				3BDBFB88CA1225230D8EA9110ABF474D /* ImageSlideshow-ImageSlideshow */,
+				95F32F197C480391A9593AB01DA9FE48 /* Pods-xfit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0790E3151C97E881CB17E3DF7BA09C89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81340944DE8C099841EC1EF2EA77C6F /* ic_cross_white@2x.png in Resources */,
+				B2E598B88BE8D1168EC64C01E92ADF8B /* ic_cross_white@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F5941ABD18D69E172056480EA3AF3FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DD1EA43E3E1D99DCD7520066B496D7 /* ImageSlideshow.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0BBA96447ECEA0FC3514E119EBF50C99 /* Sources */ = {
@@ -289,29 +462,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22B419B6AF481E2831EE3885BBE656D0 /* Sources */ = {
+		28AE5DE0FD56048528731E0F8C28B442 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B12BBABDC2BDA3A1F9F47E5197E6896 /* Pods-xfit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E9921341667ABB230FF2997D74AC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61918E735366F04A6F72C53A1DCE5FE /* FullScreenSlideshowViewController.swift in Sources */,
+				1BCAC781B14DC6D735F92BA8E6A07EF0 /* ImageSlideshow-dummy.m in Sources */,
+				18B4A73A3E7B3C8B65AAECAC5C34D05F /* ImageSlideshow.swift in Sources */,
+				418C19AB6C4A5CC756D6FD4D55B6D985 /* ImageSlideshowItem.swift in Sources */,
+				179A8F22EE4D1DF8C2F8D9A6B82F452B /* InputSource.swift in Sources */,
+				B28D755318627B3351DD5F2379E90580 /* UIImage+AspectFit.swift in Sources */,
+				6241106CD6A5100F250CB851FA48501E /* ZoomAnimatedTransitioning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F538C14BB37E04E8760B0B1953F078D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90CD0EA32EF22C4249AEF3AC09D0F58B /* Pods-xfit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C52886158AE7142B55BFD0BC6E9C0579 /* PBXTargetDependency */ = {
+		6F39E45CE6B9B438F1C538370F657B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageSlideshow;
+			target = DB99E25C67C08C717B06E8F159B57906 /* ImageSlideshow */;
+			targetProxy = 1C0EE30C7BD4A5002EDD12793B9878E4 /* PBXContainerItemProxy */;
+		};
+		87B6D515BB8D3DCD34DBC6696D0DA2BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DrawerController;
 			target = D083682CF36071495A66680CF5CE2BA5 /* DrawerController */;
-			targetProxy = 2E167B146A6AED66611951E5D06166FD /* PBXContainerItemProxy */;
+			targetProxy = F272391EBFCB26A6123303F1BE1423C7 /* PBXContainerItemProxy */;
+		};
+		DDEEED2D93B8323AB0901A3D99080AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ImageSlideshow-ImageSlideshow";
+			target = 3BDBFB88CA1225230D8EA9110ABF474D /* ImageSlideshow-ImageSlideshow */;
+			targetProxy = 262A67D5451E247C99F7FF47B1B8E31D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		37A6DD7A4F64129C12135F1812F31D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B96BCD7D7FCFE4EA6057D20D54ACDD13 /* DrawerController.xcconfig */;
+			baseConfigurationReference = 84D340CD996801C9FC21D60CF8813615 /* DrawerController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -337,7 +543,19 @@
 			};
 			name = Debug;
 		};
-		52F4D3F9D0EAD876901628C6D9A29C7F /* Release */ = {
+		5C081F75676CE691929168DF1AE56118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4403D4C209AF888AC3BCE9CCA86424A7 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9D1E9D57D51DA9D24926BF00881BD2F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14D566A2DDEDD70F8BF502A85F5D64FA /* Pods-xfit.release.xcconfig */;
 			buildSettings = {
@@ -406,7 +624,7 @@
 			};
 			name = Debug;
 		};
-		D1084C6D854082C9BBC5130B2BABCD95 /* Debug */ = {
+		A795164AEF673E342D78D51FC2CD68CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB19E76FDD2F0768D54DFCA8924741FD /* Pods-xfit.debug.xcconfig */;
 			buildSettings = {
@@ -437,9 +655,21 @@
 			};
 			name = Debug;
 		};
+		BF0419EECCFF28E6D2E91D50B5415308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4403D4C209AF888AC3BCE9CCA86424A7 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		E268D2E47FDF4E799E639713039AF3EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B96BCD7D7FCFE4EA6057D20D54ACDD13 /* DrawerController.xcconfig */;
+			baseConfigurationReference = 84D340CD996801C9FC21D60CF8813615 /* DrawerController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -463,6 +693,61 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		EB8065CDD554F474B05E307AA26FB4E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4403D4C209AF888AC3BCE9CCA86424A7 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ImageSlideshow/ImageSlideshow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageSlideshow/ImageSlideshow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEC294ACA51C650EC395162701F5509F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4403D4C209AF888AC3BCE9CCA86424A7 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ImageSlideshow/ImageSlideshow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageSlideshow/ImageSlideshow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -501,6 +786,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2099185882EF4CFECA423A5B6E6251F0 /* Build configuration list for PBXNativeTarget "Pods-xfit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A795164AEF673E342D78D51FC2CD68CF /* Debug */,
+				9D1E9D57D51DA9D24926BF00881BD2F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		28FD41691DFE829395760CA88949DA92 /* Build configuration list for PBXNativeTarget "DrawerController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -519,11 +813,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B926BC720946460CF4AD05BDE9CE4D8A /* Build configuration list for PBXNativeTarget "Pods-xfit" */ = {
+		399A38DC8DBB03A2053E651C060ED2F6 /* Build configuration list for PBXNativeTarget "ImageSlideshow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1084C6D854082C9BBC5130B2BABCD95 /* Debug */,
-				52F4D3F9D0EAD876901628C6D9A29C7F /* Release */,
+				EEC294ACA51C650EC395162701F5509F /* Debug */,
+				EB8065CDD554F474B05E307AA26FB4E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81B0A2F0373D517A7EB2C15687CDC178 /* Build configuration list for PBXNativeTarget "ImageSlideshow-ImageSlideshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C081F75676CE691929168DF1AE56118 /* Debug */,
+				BF0419EECCFF28E6D2E91D50B5415308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

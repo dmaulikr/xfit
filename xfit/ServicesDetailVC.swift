@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageSlideshow
 
 class ServicesDetailVC: UIViewController {
 
@@ -17,6 +18,8 @@ class ServicesDetailVC: UIViewController {
     @IBOutlet weak var headerTitle: UILabel!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var contentLbl: UILabel!
+    @IBOutlet var slideshow: ImageSlideshow!
+    var transitionDelegate: ZoomAnimatedTransitioningDelegate?
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
@@ -47,8 +50,19 @@ class ServicesDetailVC: UIViewController {
         self.headerTitle.text = services.title?.uppercaseString
         
         if let url = services.featuredImg {
-            self.featuredImg.image = UIImage(named: url)
+//            self.featuredImg.image = UIImage(named: url)
         }
+        
+        slideshow.backgroundColor = UIColor(red: 2535/255, green: 255/255, blue: 255/255, alpha: 0.0);
+        slideshow.slideshowInterval = 5.0
+        slideshow.pageControlPosition = PageControlPosition.InsideScrollView
+        slideshow.pageControl.currentPageIndicatorTintColor = UIColor(red: 253/255, green: 218/255, blue: 0/255, alpha: 1.0);
+        slideshow.pageControl.pageIndicatorTintColor = UIColor.lightGrayColor();
+        
+        slideshow.setImageInputs([ImageSource(imageString: "trainer1")!, ImageSource(imageString: "trainer2")!, ImageSource(imageString: "trainer3")!, ImageSource(imageString: "trainer4")!])
+        
+        let recognizer = UITapGestureRecognizer(target: self, action: "click")
+        slideshow.addGestureRecognizer(recognizer)
  
     }
     
@@ -63,6 +77,19 @@ class ServicesDetailVC: UIViewController {
     
     @IBAction func openProfile(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func click() {
+        let ctr = FullScreenSlideshowViewController()
+        ctr.pageSelected = {(page: Int) in
+            self.slideshow.setScrollViewPage(page, animated: false)
+        }
+        
+        ctr.initialPage = slideshow.scrollViewPage
+        ctr.inputs = slideshow.images
+        self.transitionDelegate = ZoomAnimatedTransitioningDelegate(slideshowView: slideshow);
+        ctr.transitioningDelegate = self.transitionDelegate!
+        self.presentViewController(ctr, animated: true, completion: nil)
     }
     
 }

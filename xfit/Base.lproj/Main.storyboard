@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O6g-NF-py5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O6g-NF-py5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -208,17 +208,17 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mqv-F2-G73">
-                                                <rect key="frame" x="115" y="98" width="146" height="16"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mqv-F2-G73">
+                                                <rect key="frame" x="115" y="98" width="150" height="50"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnj-xM-5R5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnj-xM-5R5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kZ-h1-nxT">
-                                                        <rect key="frame" x="67" y="0.0" width="79" height="16"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9kZ-h1-nxT">
+                                                        <rect key="frame" x="67" y="0.0" width="83" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X FIT МОНАРХ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tA-Dt-TU4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="79" height="16"/>
@@ -1034,8 +1034,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRJ-Dp-ZbW" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5ZU-nI-izd">
-                                                <rect key="frame" x="16" y="12" width="169" height="24"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5ZU-nI-izd">
+                                                <rect key="frame" x="16" y="12" width="173" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBQ-Ap-wMd">
                                                         <rect key="frame" x="0.0" y="0.0" width="74" height="24"/>
@@ -1043,8 +1043,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9U4-i4-wgI">
-                                                        <rect key="frame" x="77" y="0.0" width="92" height="24"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9U4-i4-wgI">
+                                                        <rect key="frame" x="77" y="0.0" width="96" height="24"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X FIT МОНАРХ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTO-tn-AP3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="24"/>
@@ -1803,17 +1803,17 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hds-60-fQC">
-                                                <rect key="frame" x="115" y="82" width="146" height="16"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hds-60-fQC">
+                                                <rect key="frame" x="115" y="82" width="150" height="50"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-fC-muJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="МОЙ КЛУБ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-fC-muJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWQ-Dj-2Uz">
-                                                        <rect key="frame" x="67" y="0.0" width="79" height="16"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tWQ-Dj-2Uz">
+                                                        <rect key="frame" x="67" y="0.0" width="83" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X FIT МОНАРХ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Da-CW-4Zi">
                                                                 <rect key="frame" x="0.0" y="0.0" width="79" height="16"/>
@@ -2066,6 +2066,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gx4-2e-Iok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1570.5" y="438.5"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="CBT-Xx-k0k">
+            <objects>
+                <avPlayerViewController storyboardIdentifier="LaunchVC" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" showsPlaybackControls="NO" videoGravity="AVLayerVideoGravityResizeAspectFill" id="Qkt-Ib-jTA" customClass="LaunchVC" customModule="xfit" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWz-5n-TXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.5" y="1226.5"/>
         </scene>
         <!--TrainersVC-->
         <scene sceneID="OfZ-Pr-MtP">
@@ -3403,7 +3416,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7D1-dr-1Ce">
-                                <rect key="frame" x="0.0" y="310" width="375" height="357"/>
+                                <rect key="frame" x="0.0" y="305" width="375" height="362"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="3xf-fQ-0Fe" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="287"/>
@@ -3481,20 +3494,11 @@
                                     <constraint firstItem="3xf-fQ-0Fe" firstAttribute="leading" secondItem="7D1-dr-1Ce" secondAttribute="leading" id="aee-H9-qAf"/>
                                 </constraints>
                             </scrollView>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-9e-IQw">
-                                <rect key="frame" x="0.0" y="70" width="375" height="240"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service_img_1" translatesAutoresizingMaskIntoConstraints="NO" id="vm2-S0-UEL">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
-                                    </imageView>
-                                </subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-9e-IQw" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="70" width="375" height="235"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="vm2-S0-UEL" firstAttribute="leading" secondItem="Kpd-9e-IQw" secondAttribute="leading" id="GWz-Pn-3F5"/>
-                                    <constraint firstAttribute="height" constant="240" id="byI-JU-uBd"/>
-                                    <constraint firstAttribute="bottom" secondItem="vm2-S0-UEL" secondAttribute="bottom" id="ihK-tw-axZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="vm2-S0-UEL" secondAttribute="trailing" id="j8H-2x-cGm"/>
-                                    <constraint firstItem="vm2-S0-UEL" firstAttribute="top" secondItem="Kpd-9e-IQw" secondAttribute="top" id="uXr-dt-Gj4"/>
+                                    <constraint firstAttribute="height" constant="235" id="byI-JU-uBd"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -3528,8 +3532,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="contentLbl" destination="XyA-cA-bIw" id="GY7-A1-FwR"/>
-                        <outlet property="featuredImg" destination="vm2-S0-UEL" id="PaF-bT-19J"/>
                         <outlet property="headerTitle" destination="0xC-Sd-TaO" id="HPD-HJ-PJI"/>
+                        <outlet property="slideshow" destination="Kpd-9e-IQw" id="zYZ-TZ-TNQ"/>
                         <outlet property="titleLbl" destination="NiU-vk-iSM" id="8U3-K4-BlQ"/>
                     </connections>
                 </viewController>
@@ -3601,39 +3605,30 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="630"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="G0d-69-7Is" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="636"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="626"/>
                                         <subviews>
-                                            <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="2Lg-gc-Jtu">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="Bri-sq-M95">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
-                                                    </imageView>
-                                                </subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="2Lg-gc-Jtu" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="Bri-sq-M95" firstAttribute="top" secondItem="2Lg-gc-Jtu" secondAttribute="top" id="2BM-JC-ZJi"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Bri-sq-M95" secondAttribute="trailing" id="4qz-45-oeM"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Bri-sq-M95" secondAttribute="bottom" id="M3i-Iv-3rp"/>
-                                                    <constraint firstAttribute="height" constant="240" id="NJa-Wv-pgE"/>
-                                                    <constraint firstItem="Bri-sq-M95" firstAttribute="leading" secondItem="2Lg-gc-Jtu" secondAttribute="leading" id="gCJ-Xj-zLN"/>
+                                                    <constraint firstAttribute="height" constant="230" id="NJa-Wv-pgE"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="ФИТНЕС КЛУБ X-FIT МОНАРХ - ПРЕМИАЛЬНЫЙ УРОВЕНЬ И РАЗМАХ БОЛЬШОГО ГОРОДА" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4I-3b-zSC">
-                                                <rect key="frame" x="16" y="256" width="343" height="62"/>
+                                                <rect key="frame" x="16" y="246" width="343" height="62"/>
                                                 <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="16"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="900" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ5-gf-CjR">
-                                                <rect key="frame" x="16" y="334" width="343" height="168"/>
+                                                <rect key="frame" x="16" y="324" width="343" height="168"/>
                                                 <string key="text">X-Fit Монарх расположен в Северо-Западном округе Москвы неподалеку от развязки Третьего транспортного кольца в одном комплексе с бизнес-центром. Наличие развитой внешней инфраструктуры дает возможность не только заняться фитнесом, но и шоппингом. В шаговой доступности есть дистанционный терминал аэропорта Шереметьево, где пассажиры могут пройти регистрацию на рейс, гостиница и много других незаменимых сервисов. Сам фитнес-клуб Динамо занимает отдельное 4-х этажное здание, а общая площадь составляет около 3 000м2. Пешая дорога от ближайшей станции метро Динамо до клуба отнимет не более 5 минут. </string>
                                                 <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="rpM-JA-v3S">
-                                                <rect key="frame" x="16" y="524" width="343" height="50"/>
+                                                <rect key="frame" x="16" y="514" width="343" height="50"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="btn_bg" translatesAutoresizingMaskIntoConstraints="NO" id="QYW-66-RGb">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -3664,7 +3659,7 @@
                                                 </constraints>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rE-OB-Mkm">
-                                                <rect key="frame" x="120" y="588" width="136" height="24"/>
+                                                <rect key="frame" x="120" y="578" width="136" height="24"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="j3s-wx-m5U">
                                                         <rect key="frame" x="0.0" y="23" width="136" height="1"/>
@@ -3775,6 +3770,7 @@
                     <size key="freeformSize" width="375" height="700"/>
                     <connections>
                         <outlet property="contentField" destination="vQ5-gf-CjR" id="NyT-SL-I9D"/>
+                        <outlet property="slideshow" destination="2Lg-gc-Jtu" id="4c6-I3-l9A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zel-xL-n16" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4848,10 +4844,10 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KoY-7J-4CG">
-                                                            <rect key="frame" x="75" y="10" width="59" height="28"/>
+                                                            <rect key="frame" x="75" y="10" width="59" height="29"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEART-X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-4u-8yF">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="59" height="14"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="59" height="15"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="16" id="tN5-go-qvH"/>
                                                                     </constraints>
@@ -4865,7 +4861,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="БАССЕЙН" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVR-fV-o0H">
-                                                                    <rect key="frame" x="0.0" y="18" width="59" height="10"/>
+                                                                    <rect key="frame" x="0.0" y="19" width="59" height="10"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="10" id="77e-UO-DEa"/>
                                                                     </constraints>
@@ -4884,7 +4880,7 @@
                                                             <color key="textColor" red="0.46274509803921571" green="0.74509803921568629" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cE5-MC-zlk">
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cE5-MC-zlk">
                                                             <rect key="frame" x="16" y="58" width="311" height="189"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2R-wv-8L4">
@@ -5081,7 +5077,6 @@
     </scenes>
     <resources>
         <image name="Line" width="82" height="1"/>
-        <image name="about" width="359" height="234"/>
         <image name="award1" width="39" height="44"/>
         <image name="award2" width="60" height="44"/>
         <image name="award3" width="39" height="44"/>
@@ -5096,14 +5091,13 @@
         <image name="map_thumb" width="375" height="286"/>
         <image name="mask" width="750" height="468"/>
         <image name="selfy_thumb" width="40" height="40"/>
-        <image name="service_img_1" width="359" height="234"/>
         <image name="service_thumb_1" width="343" height="70"/>
         <image name="trainer1" width="375" height="234"/>
         <image name="xfit_logo" width="174" height="92"/>
         <image name="yellow_label" width="95" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="END-rr-G8I"/>
+        <segue reference="bmM-qR-5MO"/>
         <segue reference="dW3-Ii-9i7"/>
     </inferredMetricsTieBreakers>
 </document>

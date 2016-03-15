@@ -5,11 +5,16 @@ PODS:
   - DrawerController/Core (1.1.0)
   - DrawerController/DrawerVisualStates (1.1.0):
     - DrawerController/Core
+  - ImageSlideshow (0.3):
+    - ImageSlideshow/Core (= 0.3)
+  - ImageSlideshow/Core (0.3)
 
 DEPENDENCIES:
   - DrawerController (~> 1.0)
+  - ImageSlideshow (~> 0.3)
 
 SPEC CHECKSUMS:
   DrawerController: 8fd56e6238399a08c4af054fbea0ef8669cd81f3
+  ImageSlideshow: 909390b0688b98a2a3e0148dc5d8e378b848418f
 
 COCOAPODS: 0.39.0
