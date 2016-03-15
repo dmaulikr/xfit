@@ -9,6 +9,8 @@ import UIKit
 import AVKit
 import AVFoundation
 
+var avPlayer: AVPlayer!
+
 class LaunchVC: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
@@ -21,11 +23,11 @@ class LaunchVC: UIViewController {
         self.view.backgroundColor = UIColor.greenColor()
         
         // Use a local or remote URL
-        let path = NSBundle.mainBundle().pathForResource("Launch", ofType:"mp4")
+        let path = NSBundle.mainBundle().pathForResource("converted", ofType:"mov")
         let url = NSURL.fileURLWithPath(path!)
         
         // Make an AVPlayer
-        let avPlayer = AVPlayer(URL: url)
+        avPlayer = AVPlayer(URL: url)
         avPlayer.actionAtItemEnd = AVPlayerActionAtItemEnd.None
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: "playerItemDidReachEnd:",

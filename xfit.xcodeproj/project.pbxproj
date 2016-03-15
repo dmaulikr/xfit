@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A753BF31C980249008AB290 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A753BF21C980249008AB290 /* LaunchVC.swift */; };
-		5A753BF51C98068E008AB290 /* Launch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5A753BF41C98068E008AB290 /* Launch.mp4 */; };
+		5A753BF91C9825FB008AB290 /* comp.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5A753BF81C9825FB008AB290 /* comp.mov */; };
+		5A753BFB1C982870008AB290 /* converted.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5A753BFA1C982870008AB290 /* converted.mov */; };
 		5A75425F1C92B7DA0024077E /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75425E1C92B7DA0024077E /* AboutVC.swift */; };
 		5A7542611C92C2030024077E /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7542601C92C2030024077E /* ContactsVC.swift */; };
 		5A7A20A51C9158620067F333 /* TrainersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A20A41C9158620067F333 /* TrainersVC.swift */; };
@@ -57,7 +58,8 @@
 /* Begin PBXFileReference section */
 		0F3BD00BCC22D45019F8076D /* Pods_xfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A753BF21C980249008AB290 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
-		5A753BF41C98068E008AB290 /* Launch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Launch.mp4; sourceTree = "<group>"; };
+		5A753BF81C9825FB008AB290 /* comp.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = comp.mov; sourceTree = "<group>"; };
+		5A753BFA1C982870008AB290 /* converted.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = converted.mov; sourceTree = "<group>"; };
 		5A75425E1C92B7DA0024077E /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		5A7542601C92C2030024077E /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		5A7A20A41C9158620067F333 /* TrainersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainersVC.swift; sourceTree = "<group>"; };
@@ -196,7 +198,8 @@
 		984871891C8AA30F0037BE70 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A753BF41C98068E008AB290 /* Launch.mp4 */,
+				5A753BFA1C982870008AB290 /* converted.mov */,
+				5A753BF81C9825FB008AB290 /* comp.mov */,
 				9848718A1C8AA3610037BE70 /* dinpro.ttf */,
 				9848718C1C8AA3D80037BE70 /* ionicons.ttf */,
 			);
@@ -316,9 +319,10 @@
 			files = (
 				984871821C8AA0350037BE70 /* LaunchScreen.storyboard in Resources */,
 				9848718D1C8AA3D80037BE70 /* ionicons.ttf in Resources */,
-				5A753BF51C98068E008AB290 /* Launch.mp4 in Resources */,
 				9848717F1C8AA0350037BE70 /* Assets.xcassets in Resources */,
+				5A753BF91C9825FB008AB290 /* comp.mov in Resources */,
 				9848718B1C8AA3610037BE70 /* dinpro.ttf in Resources */,
+				5A753BFB1C982870008AB290 /* converted.mov in Resources */,
 				9848717D1C8AA0350037BE70 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

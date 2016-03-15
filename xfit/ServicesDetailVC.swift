@@ -28,8 +28,26 @@ class ServicesDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         updateUI()
+        
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
+    }
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.Right:
+                self.navigationController?.popViewControllerAnimated(true)
+            default:
+                break
+            }
+        }
     }
     
     func updateUI() {
@@ -49,8 +67,16 @@ class ServicesDetailVC: UIViewController {
         
         self.headerTitle.text = services.title?.uppercaseString
         
+        var imageSet = [InputSource]()
+        
         if let url = services.featuredImg {
 //            self.featuredImg.image = UIImage(named: url)
+            let items = url.componentsSeparatedByString(",")
+            for item in items {
+                let itemSourse = ImageSource(imageString: item)!
+                imageSet.append(itemSourse)
+                
+            }
         }
         
         slideshow.backgroundColor = UIColor(red: 2535/255, green: 255/255, blue: 255/255, alpha: 0.0);
@@ -59,7 +85,7 @@ class ServicesDetailVC: UIViewController {
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor(red: 253/255, green: 218/255, blue: 0/255, alpha: 1.0);
         slideshow.pageControl.pageIndicatorTintColor = UIColor.lightGrayColor();
         
-        slideshow.setImageInputs([ImageSource(imageString: "trainer1")!, ImageSource(imageString: "trainer2")!, ImageSource(imageString: "trainer3")!, ImageSource(imageString: "trainer4")!])
+        slideshow.setImageInputs(imageSet)
         
         let recognizer = UITapGestureRecognizer(target: self, action: "click")
         slideshow.addGestureRecognizer(recognizer)
