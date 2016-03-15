@@ -59,6 +59,11 @@
                             <constraint firstItem="KuK-iC-ocJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="loD-Nz-eoo"/>
                             <constraint firstItem="ChO-vT-OZb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n35-kN-pd7"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ChO-vT-OZb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>

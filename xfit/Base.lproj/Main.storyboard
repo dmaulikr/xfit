@@ -113,6 +113,8 @@
             <string>DINPro-Bold</string>
             <string>DINPro-Bold</string>
             <string>DINPro-Bold</string>
+            <string>DINPro-Bold</string>
+            <string>DINPro-Bold</string>
         </mutableArray>
         <mutableArray key="ionicons.ttf">
             <string>Ionicons</string>
@@ -2831,7 +2833,44 @@
                     <view key="view" contentMode="scaleToFill" id="sl9-8C-92Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98823529409999999" green="0.83137254900000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="4v3-Ps-uh4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HMy-oa-dKr" customClass="LogoAnimation" customModule="xfit" customModuleProvider="target">
+                                <rect key="frame" x="13" y="214" width="349" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="DPh-I6-Ukv"/>
+                                    <constraint firstAttribute="width" constant="349" id="csq-US-FRs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FXOFFICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XF-n9-KYm">
+                                <rect key="frame" x="165" y="613" width="46" height="13"/>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POWERED BY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17g-bH-ibb">
+                                <rect key="frame" x="157" y="597" width="62" height="13"/>
+                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="10"/>
+                                <color key="textColor" red="0.46274509800000002" green="0.74509803919999995" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1XF-n9-KYm" firstAttribute="centerX" secondItem="sl9-8C-92Q" secondAttribute="centerX" id="0Xk-3B-1xi"/>
+                            <constraint firstItem="HMy-oa-dKr" firstAttribute="centerY" secondItem="sl9-8C-92Q" secondAttribute="centerY" id="1sH-s8-l9l"/>
+                            <constraint firstAttribute="trailing" secondItem="4v3-Ps-uh4" secondAttribute="trailing" id="5Ue-2d-BUE"/>
+                            <constraint firstItem="17g-bH-ibb" firstAttribute="centerX" secondItem="sl9-8C-92Q" secondAttribute="centerX" id="PQI-BU-H7M"/>
+                            <constraint firstItem="4v3-Ps-uh4" firstAttribute="leading" secondItem="sl9-8C-92Q" secondAttribute="leading" id="Vc5-5w-ZFx"/>
+                            <constraint firstItem="uJw-DJ-C9k" firstAttribute="top" secondItem="1XF-n9-KYm" secondAttribute="bottom" constant="41" id="cW2-DL-Qwf"/>
+                            <constraint firstItem="uJw-DJ-C9k" firstAttribute="top" secondItem="4v3-Ps-uh4" secondAttribute="bottom" id="cu9-OO-YXM"/>
+                            <constraint firstItem="HMy-oa-dKr" firstAttribute="centerX" secondItem="sl9-8C-92Q" secondAttribute="centerX" id="dMZ-NO-wSc"/>
+                            <constraint firstItem="4v3-Ps-uh4" firstAttribute="top" secondItem="sl9-8C-92Q" secondAttribute="top" id="gcm-h1-1SX"/>
+                            <constraint firstItem="1XF-n9-KYm" firstAttribute="top" secondItem="17g-bH-ibb" secondAttribute="bottom" constant="3" id="juT-jZ-39a"/>
+                            <constraint firstItem="1XF-n9-KYm" firstAttribute="top" secondItem="17g-bH-ibb" secondAttribute="bottom" constant="3" id="uzc-d1-zNA"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -5110,7 +5149,7 @@
         <image name="yellow_label" width="95" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="bmM-qR-5MO"/>
         <segue reference="dW3-Ii-9i7"/>
-        <segue reference="Jcw-yh-tWn"/>
     </inferredMetricsTieBreakers>
 </document>
