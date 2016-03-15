@@ -4116,13 +4116,20 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="tGb-U2-cBS">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                                     </imageView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="315-uJ-hWM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tGb-U2-cBS" secondAttribute="trailing" id="Ejo-np-f1v"/>
                                     <constraint firstItem="tGb-U2-cBS" firstAttribute="leading" secondItem="R2N-ct-ukT" secondAttribute="leading" id="HoN-6r-GVw"/>
+                                    <constraint firstItem="315-uJ-hWM" firstAttribute="top" secondItem="R2N-ct-ukT" secondAttribute="top" id="IJa-g3-59b"/>
+                                    <constraint firstItem="315-uJ-hWM" firstAttribute="leading" secondItem="R2N-ct-ukT" secondAttribute="leading" id="Nbu-Gj-Ysb"/>
                                     <constraint firstAttribute="height" constant="260" id="Opr-io-O3g"/>
                                     <constraint firstAttribute="bottom" secondItem="tGb-U2-cBS" secondAttribute="bottom" id="QLe-Hc-uD1"/>
+                                    <constraint firstAttribute="trailing" secondItem="315-uJ-hWM" secondAttribute="trailing" id="Vvd-yo-2TE"/>
+                                    <constraint firstAttribute="bottom" secondItem="315-uJ-hWM" secondAttribute="bottom" id="i5c-gP-19f"/>
                                     <constraint firstItem="tGb-U2-cBS" firstAttribute="top" secondItem="R2N-ct-ukT" secondAttribute="top" id="paY-S1-cdg"/>
                                 </constraints>
                             </view>
@@ -5149,7 +5156,7 @@
         <image name="yellow_label" width="95" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bmM-qR-5MO"/>
+        <segue reference="END-rr-G8I"/>
         <segue reference="dW3-Ii-9i7"/>
     </inferredMetricsTieBreakers>
 </document>
