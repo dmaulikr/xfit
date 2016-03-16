@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 class ContactsVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-
+    
     
     @IBOutlet weak var contentField: UILabel!
     @IBOutlet weak var mapView: MKMapView!
@@ -46,7 +46,7 @@ class ContactsVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
         // show artwork on map
         let artwork = CustomAnnotation(identifier: "coords",title: "X-FIT", coordinate: CLLocationCoordinate2D(latitude: 55.78325, longitude: 37.55907))
         mapView.addAnnotation(artwork)
-
+        
         
     }
     

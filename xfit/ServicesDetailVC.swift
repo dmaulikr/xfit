@@ -13,6 +13,7 @@ class ServicesDetailVC: UIViewController {
 
     var services: Services!
     var toggleRightDrawer: Bool?
+    @IBOutlet weak var featuredImg: UIImageView!
     
     @IBOutlet weak var headerTitle: UILabel!
     @IBOutlet weak var titleLbl: UILabel!
@@ -69,10 +70,7 @@ class ServicesDetailVC: UIViewController {
         var imageSet = [InputSource]()
         
         if let url = services.featuredImg {
-<<<<<<< HEAD
-=======
 //            self.featuredImg.image = UIImage(named: url)
->>>>>>> origin/master
             let items = url.componentsSeparatedByString(",")
             for item in items {
                 let itemSourse = ImageSource(imageString: item)!

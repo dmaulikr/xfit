@@ -143,8 +143,10 @@ class ServicesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
 
         func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-                let news = self.services[indexPath.row]
-                self.performSegueWithIdentifier("ServicesDetailVC", sender: news)
+            
+            let news = self.services[indexPath.row]
+            performSegueWithIdentifier("ServicesDetailVC", sender: news)
+            
         }
         
         override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
