@@ -61,7 +61,11 @@ public class ImageSlideshow: UIView, UIScrollViewDelegate {
             setTimerIfNeeded()
         }
     }
+<<<<<<< HEAD
     public var contentScaleMode: UIViewContentMode = UIViewContentMode.ScaleAspectFill {
+=======
+    public var contentScaleMode: UIViewContentMode = UIViewContentMode.ScaleAspectFit {
+>>>>>>> origin/master
         didSet {
             for view in slideshowItems {
                 view.imageView.contentMode = contentScaleMode
