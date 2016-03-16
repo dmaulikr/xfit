@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A753BF31C980249008AB290 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A753BF21C980249008AB290 /* LaunchVC.swift */; };
+		5A753BFD1C982F37008AB290 /* LogoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A753BFC1C982F37008AB290 /* LogoAnimation.swift */; };
+		5A753C011C983DE7008AB290 /* soundxfit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A753C001C983DE7008AB290 /* soundxfit.mp3 */; };
 		5A75425F1C92B7DA0024077E /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75425E1C92B7DA0024077E /* AboutVC.swift */; };
 		5A7542611C92C2030024077E /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7542601C92C2030024077E /* ContactsVC.swift */; };
 		5A7A20A51C9158620067F333 /* TrainersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A20A41C9158620067F333 /* TrainersVC.swift */; };
@@ -54,6 +57,9 @@
 
 /* Begin PBXFileReference section */
 		0F3BD00BCC22D45019F8076D /* Pods_xfit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xfit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A753BF21C980249008AB290 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		5A753BFC1C982F37008AB290 /* LogoAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoAnimation.swift; sourceTree = "<group>"; };
+		5A753C001C983DE7008AB290 /* soundxfit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundxfit.mp3; sourceTree = "<group>"; };
 		5A75425E1C92B7DA0024077E /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		5A7542601C92C2030024077E /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		5A7A20A41C9158620067F333 /* TrainersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainersVC.swift; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 				984871941C8ADAFC0037BE70 /* CategoryLabelBorder.swift */,
 				9848719B1C8AEB920037BE70 /* RoundBtnViewStyle.swift */,
 				9848718F1C8AAD4A0037BE70 /* PanelsViewBorder.swift */,
+				5A753BFC1C982F37008AB290 /* LogoAnimation.swift */,
 			);
 			name = Design;
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 		984871891C8AA30F0037BE70 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5A753C001C983DE7008AB290 /* soundxfit.mp3 */,
 				9848718A1C8AA3610037BE70 /* dinpro.ttf */,
 				9848718C1C8AA3D80037BE70 /* ionicons.ttf */,
 			);
@@ -243,6 +251,7 @@
 				5A9893E51C92F6C900D54CD7 /* OurSelfyVC.swift */,
 				5A9893EB1C93032500D54CD7 /* OurSelfyDetailVC.swift */,
 				5A7AC1FB1C940DAC00FDB3D1 /* CalendarVC.swift */,
+				5A753BF21C980249008AB290 /* LaunchVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -309,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				984871821C8AA0350037BE70 /* LaunchScreen.storyboard in Resources */,
+				5A753C011C983DE7008AB290 /* soundxfit.mp3 in Resources */,
 				9848718D1C8AA3D80037BE70 /* ionicons.ttf in Resources */,
 				9848717F1C8AA0350037BE70 /* Assets.xcassets in Resources */,
 				9848718B1C8AA3610037BE70 /* dinpro.ttf in Resources */,
@@ -398,6 +408,7 @@
 				5A7A20A91C91666C0067F333 /* TrainersCell.swift in Sources */,
 				5A7AC1FC1C940DAC00FDB3D1 /* CalendarVC.swift in Sources */,
 				5A9893E21C92EBC000D54CD7 /* PhotoGalleryVC.swift in Sources */,
+				5A753BFD1C982F37008AB290 /* LogoAnimation.swift in Sources */,
 				5AB1FD691C903F77007334FB /* LeftSideVC.swift in Sources */,
 				5A9893E41C92EEB500D54CD7 /* PhotoGalleryCell.swift in Sources */,
 				5A7A20A51C9158620067F333 /* TrainersVC.swift in Sources */,
@@ -406,6 +417,7 @@
 				5A7AC2081C9413E700FDB3D1 /* CalendarMenuView.swift in Sources */,
 				984871901C8AAD4A0037BE70 /* PanelsViewBorder.swift in Sources */,
 				5A7A20AC1C9188A50067F333 /* TrainerDetailVC.swift in Sources */,
+				5A753BF31C980249008AB290 /* LaunchVC.swift in Sources */,
 				5AB1FD671C90364C007334FB /* ViewerVC.swift in Sources */,
 				984871981C8AE90F0037BE70 /* NewsVC.swift in Sources */,
 			);

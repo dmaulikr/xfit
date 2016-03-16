@@ -40,35 +40,35 @@ class ServicesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     "title":"БАССЕЙН 25 М С МОРСКОЙ ВОДОЙ",
                     "icon":"icon-water",
                     "thumb":"service_thumb_1",
-                    "featuredImg":"service_img_1",
+                    "featuredImg":"service_img_1,service_thumb_2,service_thumb_3",
                     "content":"Фитнес-клуб X-Fit Монарх не просто с бассейном – а с бассейном с морской водой. Подобный солевой состав воды оказывает целебное воздействие на ваш организм и позволяет даже зимой в Москве вспомнить об отпуске на море. Впрочем, это не единственное преимущество занятий в бассейне X-Fit Монарх. Так, благодаря длине в 25 м и трем дорожкам здесь возможно одновременно заниматься плаванием и проводить тренировки по индивидуальной программе (реабилитация, подготовка к соревнованиям и т.д.)."
                 
                 ],[
                     "title":"ТРЕНАЖЕРНЫЙ ЗАЛ",
                     "icon":"icon-gym",
                     "thumb":"service_thumb_2",
-                    "featuredImg":"service_thumb_2",
+                    "featuredImg":"service_img_1,service_thumb_2,service_thumb_3",
                     "content":"Фитнес-клуб X-Fit Монарх не просто с бассейном – а с бассейном с морской водой. Подобный солевой состав воды оказывает целебное воздействие на ваш организм и позволяет даже зимой в Москве вспомнить об отпуске на море. Впрочем, это не единственное преимущество занятий в бассейне X-Fit Монарх. Так, благодаря длине в 25 м и трем дорожкам здесь возможно одновременно заниматься плаванием и проводить тренировки по индивидуальной программе (реабилитация, подготовка к соревнованиям и т.д.)."
                     
                 ],[
                     "title":"ДВА ЗАЛА ГРУППОВЫХ ЗАНЯТИЙ",
                     "icon":"icon-restl",
                     "thumb":"service_thumb_3",
-                    "featuredImg":"service_img_1",
+                    "featuredImg":"service_img_1,service_thumb_2,service_thumb_3",
                     "content":"Фитнес-клуб X-Fit Монарх не просто с бассейном – а с бассейном с морской водой. Подобный солевой состав воды оказывает целебное воздействие на ваш организм и позволяет даже зимой в Москве вспомнить об отпуске на море. Впрочем, это не единственное преимущество занятий в бассейне X-Fit Монарх. Так, благодаря длине в 25 м и трем дорожкам здесь возможно одновременно заниматься плаванием и проводить тренировки по индивидуальной программе (реабилитация, подготовка к соревнованиям и т.д.)."
                     
                 ],[
                     "title":"САЙКЛ-СТУДИЯ",
                     "icon":"icon-cycle",
                     "thumb":"service_thumb_4",
-                    "featuredImg":"service_img_1",
+                    "featuredImg":"service_img_1,service_thumb_2,service_thumb_3",
                     "content":"Фитнес-клуб X-Fit Монарх не просто с бассейном – а с бассейном с морской водой. Подобный солевой состав воды оказывает целебное воздействие на ваш организм и позволяет даже зимой в Москве вспомнить об отпуске на море. Впрочем, это не единственное преимущество занятий в бассейне X-Fit Монарх. Так, благодаря длине в 25 м и трем дорожкам здесь возможно одновременно заниматься плаванием и проводить тренировки по индивидуальной программе (реабилитация, подготовка к соревнованиям и т.д.)."
                     
                 ],[
                     "title":"ДЕТСКИЙ ФИТНЕС",
                     "icon":"icon-child",
                     "thumb":"service_thumb_5",
-                    "featuredImg":"service_img_1",
+                    "featuredImg":"service_img_1,service_thumb_2,service_thumb_3",
                     "content":"Фитнес-клуб X-Fit Монарх не просто с бассейном – а с бассейном с морской водой. Подобный солевой состав воды оказывает целебное воздействие на ваш организм и позволяет даже зимой в Москве вспомнить об отпуске на море. Впрочем, это не единственное преимущество занятий в бассейне X-Fit Монарх. Так, благодаря длине в 25 м и трем дорожкам здесь возможно одновременно заниматься плаванием и проводить тренировки по индивидуальной программе (реабилитация, подготовка к соревнованиям и т.д.)."
                     
                 ],[
@@ -135,14 +135,16 @@ class ServicesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     
         func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-            return 78
+            return 84
+        }
+    
+        func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+            return 84
         }
 
         func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-            
-            let news = self.services[indexPath.row]
-            performSegueWithIdentifier("ServicesDetailVC", sender: news)
-            
+                let news = self.services[indexPath.row]
+                self.performSegueWithIdentifier("ServicesDetailVC", sender: news)
         }
         
         override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

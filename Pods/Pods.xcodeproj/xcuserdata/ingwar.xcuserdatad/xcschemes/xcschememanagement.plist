@@ -16,6 +16,16 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -33,6 +43,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3BDBFB88CA1225230D8EA9110ABF474D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95F32F197C480391A9593AB01DA9FE48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A26F9D4BBBA2C6614143F9FC45EE1140</key>
 		<dict>
 			<key>primary</key>
@@ -49,6 +69,11 @@
 			<true/>
 		</dict>
 		<key>D083682CF36071495A66680CF5CE2BA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB99E25C67C08C717B06E8F159B57906</key>
 		<dict>
 			<key>primary</key>
 			<true/>

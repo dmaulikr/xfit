@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var centerViewController:UIViewController = UIViewController()
         
-        centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainMenuVC") as! MainMenuVC
+        centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LaunchVC") as! LaunchVC
         
         let leftSideNavController = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideVC") as! LeftSideVC
         
