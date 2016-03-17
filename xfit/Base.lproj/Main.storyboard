@@ -5219,7 +5219,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-nC-Wx1">
-                                                        <rect key="frame" x="66" y="126" width="261" height="277"/>
+                                                        <rect key="frame" x="66" y="126" width="261" height="299"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="217" id="3iE-l6-EN1"/>
@@ -5274,7 +5274,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="COl-iY-h1B" secondAttribute="bottom" constant="16" id="2V6-eq-agT"/>
-                                                    <constraint firstItem="lQc-Xk-gOa" firstAttribute="top" secondItem="U6r-nC-Wx1" secondAttribute="bottom" constant="40" id="46m-9K-c4i"/>
+                                                    <constraint firstItem="lQc-Xk-gOa" firstAttribute="top" secondItem="U6r-nC-Wx1" secondAttribute="bottom" constant="18" id="46m-9K-c4i"/>
                                                     <constraint firstItem="COl-iY-h1B" firstAttribute="top" secondItem="lQc-Xk-gOa" secondAttribute="bottom" constant="40" id="8WT-8m-GeB"/>
                                                     <constraint firstAttribute="trailing" secondItem="COl-iY-h1B" secondAttribute="trailing" id="EsC-h4-j17"/>
                                                     <constraint firstItem="COl-iY-h1B" firstAttribute="leading" secondItem="Zqh-fd-0aU" secondAttribute="leading" id="ShF-pJ-Rau"/>
