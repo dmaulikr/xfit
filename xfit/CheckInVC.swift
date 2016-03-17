@@ -41,6 +41,7 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         img.translatesAutoresizingMaskIntoConstraints = false
         
         PhotoView.addSubview(img)
+
         
     }
     
