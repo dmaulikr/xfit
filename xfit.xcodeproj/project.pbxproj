@@ -40,6 +40,8 @@
 		5AB1FD6D1C9053DD007334FB /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1FD6C1C9053DD007334FB /* MainMenuVC.swift */; };
 		5AB1FD6F1C905D57007334FB /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1FD6E1C905D57007334FB /* ProfileVC.swift */; };
 		7177D93D7AE280615B1A16A3 /* Pods_xfit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3BD00BCC22D45019F8076D /* Pods_xfit.framework */; };
+		983480731C9AFE300060CDC5 /* CheckInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983480721C9AFE300060CDC5 /* CheckInVC.swift */; };
+		983480751C9B2F0E0060CDC5 /* ViewBorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983480741C9B2F0E0060CDC5 /* ViewBorderRadius.swift */; };
 		984871781C8AA0340037BE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984871771C8AA0340037BE70 /* AppDelegate.swift */; };
 		9848717D1C8AA0350037BE70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9848717B1C8AA0350037BE70 /* Main.storyboard */; };
 		9848717F1C8AA0350037BE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9848717E1C8AA0350037BE70 /* Assets.xcassets */; };
@@ -90,6 +92,8 @@
 		5AB1FD6C1C9053DD007334FB /* MainMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		5AB1FD6E1C905D57007334FB /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		8810B9EBA639E4CBA63D98B9 /* Pods-xfit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xfit.release.xcconfig"; path = "Pods/Target Support Files/Pods-xfit/Pods-xfit.release.xcconfig"; sourceTree = "<group>"; };
+		983480721C9AFE300060CDC5 /* CheckInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInVC.swift; sourceTree = "<group>"; };
+		983480741C9B2F0E0060CDC5 /* ViewBorderRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBorderRadius.swift; sourceTree = "<group>"; };
 		984871741C8AA0340037BE70 /* xfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xfit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		984871771C8AA0340037BE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9848717C1C8AA0350037BE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				9848719B1C8AEB920037BE70 /* RoundBtnViewStyle.swift */,
 				9848718F1C8AAD4A0037BE70 /* PanelsViewBorder.swift */,
 				5A753BFC1C982F37008AB290 /* LogoAnimation.swift */,
+				983480741C9B2F0E0060CDC5 /* ViewBorderRadius.swift */,
 			);
 			name = Design;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				5A9893EB1C93032500D54CD7 /* OurSelfyDetailVC.swift */,
 				5A7AC1FB1C940DAC00FDB3D1 /* CalendarVC.swift */,
 				5A753BF21C980249008AB290 /* LaunchVC.swift */,
+				983480721C9AFE300060CDC5 /* CheckInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983480751C9B2F0E0060CDC5 /* ViewBorderRadius.swift in Sources */,
 				984871781C8AA0340037BE70 /* AppDelegate.swift in Sources */,
 				5A7A20A71C9165ED0067F333 /* Trainers.swift in Sources */,
 				986274611C8C771B005B29AC /* NewsDetailVC.swift in Sources */,
@@ -397,6 +404,7 @@
 				9848719A1C8AEAAC0037BE70 /* NewsCell.swift in Sources */,
 				5A7AC2051C9413E700FDB3D1 /* CalendarDayView.swift in Sources */,
 				5A7A20B01C91B4F50067F333 /* ServicesCell.swift in Sources */,
+				983480731C9AFE300060CDC5 /* CheckInVC.swift in Sources */,
 				5A7542611C92C2030024077E /* ContactsVC.swift in Sources */,
 				5A7A20B21C91B6CE0067F333 /* Services.swift in Sources */,
 				5A7AC20B1C9413E700FDB3D1 /* GDate.swift in Sources */,

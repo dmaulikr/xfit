@@ -104,6 +104,17 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
             
             break;
+            
+        case 4:
+            
+            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CheckInVC") as! CheckInVC
+            let centerNav = UINavigationController(rootViewController: centerViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.drawerController!.centerViewController = centerNav
+            appDelegate.drawerController!.toggleDrawerSide(.Left, animated: true, completion: nil)
+            
+            break;
 
         case 5:
             
