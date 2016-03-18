@@ -13,14 +13,14 @@ class MainMenuVC: UIViewController {
     @IBOutlet weak var scrllView: UIScrollView!
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
-        self.evo_drawerController?.openDrawerGestureModeMask = .Custom
+        self.evo_drawerController?.openDrawerGestureModeMask = .BezelPanningCenterView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+   
     }
-    
-    
+
 
     @IBAction func NewsViewBtn(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)

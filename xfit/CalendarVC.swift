@@ -30,19 +30,62 @@ class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
         weekView?.delegate = self
         
         self.parseData()
+        
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.tableView.addGestureRecognizer(swipeLeft)
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.tableView.addGestureRecognizer(swipeRight)
 
     }
     
     func daySelect() {
+    }
+    
+    func nextWeekView() {}
+    func prevWeekView(){}
+    func afterAutoScroll(){}
+    
+    
+    
+    func toNextDay() {
+        selectedIndex = -1
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesInRange: range)
+        self.tableView.reloadSections(sections, withRowAnimation: .Left)
+        
+    }
+    
+    func toPrevDay() {
+        selectedIndex = -1
+        let range = NSMakeRange(0, self.tableView.numberOfSections)
+        let sections = NSIndexSet(indexesInRange: range)
+        self.tableView.reloadSections(sections, withRowAnimation: .Right)
+    }
+    
+    func tapOnDay() {
         selectedIndex = -1
         let range = NSMakeRange(0, self.tableView.numberOfSections)
         let sections = NSIndexSet(indexesInRange: range)
         self.tableView.reloadSections(sections, withRowAnimation: .Left)
     }
     
-    func nextWeekView() {}
-    func prevWeekView(){}
-    func afterAutoScroll(){}
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            if swipeGesture.direction == UISwipeGestureRecognizerDirection.Left {
+                weekView!.scrollToNextDay()
+            }
+            
+            if swipeGesture.direction == UISwipeGestureRecognizerDirection.Right {
+                weekView!.scrollToPrevDay()
+            }
+        }
+        
+    }
     
 //    func scrollToPrevDay(sender: UITapGestureRecognizer) {
 //        print("prev")
@@ -59,7 +102,7 @@ class CalendarVC: UIViewController, UITableViewDataSource, UITableViewDelegate, 
         
         override func viewWillAppear(animated: Bool) {
             self.navigationController?.navigationBarHidden = true
-            self.evo_drawerController?.openDrawerGestureModeMask = .All
+            self.evo_drawerController?.openDrawerGestureModeMask = .BezelPanningCenterView
         }
         
         var schedule = [Schedule]()

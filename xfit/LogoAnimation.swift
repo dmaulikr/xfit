@@ -20,12 +20,12 @@ class LogoAnimation: UIImageView {
     
     
     func logoAnimation() {
-        self.image = UIImage(named: "xfit_81.png")
+        self.image = UIImage(named: "xfit_82.png")
         
         self.animationImages = nil
         
         var imgArray = [UIImage]()
-        for var x = 0; x <= 81; x++ {
+        for var x = 0; x <= 82; x++ {
             let img = UIImage(named: "xfit_\(x).png")
             
             imgArray.append(img!)

@@ -48,6 +48,9 @@ class OurSelfyVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
                     ],[
                         "featuredImg":"i7",
                         "name":"ALENA BORODINA"
+                    ],[
+                        "featuredImg":"i8",
+                        "name":"ALENA BORODINA"
                     ]]
             
             for object in objects {

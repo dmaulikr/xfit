@@ -32,15 +32,6 @@ class OurSelfyDetailVC: UIViewController, UIScrollViewDelegate {
             super.viewDidLoad()
             scrollView.delegate = self
             self.updateUI()
-            
-            let tap = UITapGestureRecognizer(target: self, action: "showImageViewer")
-            imageViewer.addGestureRecognizer(tap)
-            
-        }
-        
-        func showImageViewer() {
-            let img = selfy.featuredImg
-            performSegueWithIdentifier("ViewerVC", sender: img)
         }
         
         
@@ -120,15 +111,6 @@ class OurSelfyDetailVC: UIViewController, UIScrollViewDelegate {
             }
         }
         
-        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if segue.identifier == "ViewerVC" {
-                if let viewerVC = segue.destinationViewController as? ViewerVC {
-                    if let img = sender as? String {
-                        viewerVC.img = img
-                    }
-                }
-            }
-        }
         
         @IBAction func openProfile(sender: AnyObject) {
             self.navigationController?.popViewControllerAnimated(true)

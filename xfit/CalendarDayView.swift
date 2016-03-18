@@ -6,6 +6,7 @@ import UIKit
 protocol CalendarDayViewDelegate {
     func selectedDay(dayView: CalendarDayView)
     func unSelectedDay(dayView: CalendarDayView)
+    func tapOnDay()
 }
 
 class CalendarDayView: UIView {
@@ -108,6 +109,7 @@ class CalendarDayView: UIView {
             isSelectedDay = true
 //            delegate?.selectedDay(self)
 //            print(date!.description)
+            delegate?.tapOnDay()
             
         }
     }

@@ -12,7 +12,7 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var menuItems:[String] = ["ГЛАВНАЯ","ЛИЧНЫЙ КАБИНЕТ","РАСПИСАНИЕ","НОВОСТИ","ЗАЧЕКИНИТЬСЯ","О КЛУБЕ","ФОТОТУР","УСЛУГИ","ТРЕНЕРА","НАШИ СЕЛФИ","КОНТАКТЫ"];
+    var menuItems:[String] = ["ГЛАВНАЯ","ЛИЧНЫЙ КАБИНЕТ","РАСПИСАНИЕ","НОВОСТИ","ЗАЧЕКИНИТЬСЯ","О КЛУБЕ","ФОТОТУР","УСЛУГИ","ТРЕНЕРА","НАШИ СЕЛФИ","ГОСТЕВАЯ КНИГА","КОНТАКТЫ"];
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,7 +50,7 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.menuItemLbl.text = menuItems[indexPath.row].uppercaseString
         
         if indexPath.row == menuItems.count - 1 {
-            cell.cellSeparatorView.hidden = true
+//            cell.cellSeparatorView.hidden = true
         }
         
         return cell;
@@ -171,7 +171,7 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             
             break;
             
-        case 10:
+        case 11:
             
             let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContactsVC") as! ContactsVC
             let centerNav = UINavigationController(rootViewController: centerViewController)

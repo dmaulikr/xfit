@@ -15,6 +15,8 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var PhotoView: UIView!
     
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var CheckInImage: UIImageView!
+    @IBOutlet weak var addPhotoLbl: UILabel!
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
@@ -36,12 +38,9 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         
         
-        let img = UIImageView(image: image)
-        
-        img.translatesAutoresizingMaskIntoConstraints = false
-        
-        PhotoView.addSubview(img)
-
+        self.CheckInImage.image = image
+        self.addPhotoLbl.text = "РЕДАКТИРОВАТЬ"
+//        self.PhotoView.frame = CGRectMake(0 , 0, self.PhotoView.frame.width, self.PhotoView.frame.height + 40)
         
     }
     
