@@ -29,28 +29,48 @@ class OurSelfyVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
             
                     let objects = [[
                         "featuredImg":"i1",
-                        "name":"MARIA CODANA"
+                        "name":"MARIA CODANA",
+                        "likes_count":120,
+                        "likes":true,
+                        "comments_count":10
                     ],[
                         "featuredImg":"i2",
-                        "name":"ALENA BORODINA"
+                        "name":"ALENA BORODINA",
+                        "likes_count":90,
+                        "comments_count":17
                     ],[
                         "featuredImg":"i3",
-                        "name":"ALENA BORODINA"
+                        "name":"ALENA BORODINA",
+                        "likes_count":10,
+                        "likes":true,
+                        "comments_count":32
                     ],[
                         "featuredImg":"i4",
-                        "name":"ALENA BORODINA"
+                        "name":"ALENA BORODINA",
+                        "likes_count":20,
+                        "comments_count":18
                     ],[
                         "featuredImg":"i5",
-                        "name":"ALENA BORODINA"
+                        "name":"ALENA BORODINA",
+                        "likes_count":78,
+                        "comments_count":14
                     ],[
                         "featuredImg":"i6",
-                        "name":"ALENA BORODINA"
+                        "name":"ALENA BORODINA",
+                        "likes_count":90,
+                        "likes":true,
+                        "comments_count":1
                     ],[
                         "featuredImg":"i7",
-                        "name":"ALENA BORODINA"
+                        "name":"ALENA BORODINA",
+                        "likes_count":114,
+                        "likes":true,
+                        "comments_count":22
                     ],[
                         "featuredImg":"i8",
-                        "name":"ALENA BORODINA"
+                        "name":"ALENA BORODINA",
+                        "likes_count":176,
+                        "comments_count":16
                     ]]
             
             for object in objects {

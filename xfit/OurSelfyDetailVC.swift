@@ -20,6 +20,12 @@ class OurSelfyDetailVC: UIViewController, UIScrollViewDelegate {
         @IBOutlet weak var nameLbl: UILabel!
         
         @IBOutlet weak var imageViewer: UIView!
+    
+        @IBOutlet weak var likesCountLbl: UILabel!
+    
+        @IBOutlet weak var commentCountLbl: UILabel!
+    
+        @IBOutlet weak var likesIcon: UILabel!
         
         @IBOutlet weak var tableView: UITableView!
         
@@ -53,6 +59,23 @@ class OurSelfyDetailVC: UIViewController, UIScrollViewDelegate {
             
             if let url = selfy.featuredImg {
                 self.headerImage.image = UIImage(named: url)
+            }
+            
+            if let likesCount = selfy.likes_count {
+                self.likesCountLbl.text = "\(likesCount)"
+            } else {
+                self.likesCountLbl.text = "0"
+            }
+            
+            if let likes = selfy.likes where likes == true {
+                self.likesIcon.text = ""
+                self.likesIcon.textColor = UIColor(red: 118/255, green: 190/255, blue: 52/255, alpha: 1.0)
+            }
+            
+            if let commentCount = selfy.comments_count {
+                self.commentCountLbl.text = "\(commentCount)"
+            } else {
+                self.commentCountLbl.text = "0"
             }
             
         }

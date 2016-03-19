@@ -20,6 +20,8 @@ class Selfy {
     
     private var _likes_count: Int?
     
+    private var _likes: Bool?
+    
     private var _comments_count: Int?
     
     private var _comments_feed: String?
@@ -44,16 +46,21 @@ class Selfy {
         return _likes_count
     }
     
+    var likes: Bool? {
+        return _likes
+    }
+    
     var comments_count: Int? {
         return _comments_count
     }
     
-    init (name: String?, featuredImg: String?, tags: String?, comments_feed: String?, likes_count: Int?, comments_count: Int?) {
+    init (name: String?, featuredImg: String?, tags: String?, comments_feed: String?, likes_count: Int?, likes: Bool?, comments_count: Int?) {
         self._name = name
         self._featuredImg = featuredImg
         self._tags = tags
         self._comments_feed = comments_feed
         self._likes_count = likes_count
+        self._likes = likes
         self._comments_count = comments_count
     }
     
@@ -77,6 +84,10 @@ class Selfy {
         
         if let likes_count = dictionary["likes_count"] as? Int {
             self._likes_count = likes_count
+        }
+        
+        if let likes = dictionary["likes"] as? Bool {
+            self._likes = likes
         }
         
         if let comments_count = dictionary["comments_count"] as? Int {

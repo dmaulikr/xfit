@@ -12,7 +12,7 @@ class PhotoGalleryVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         @IBOutlet weak var collection: UICollectionView!
     
-        let images = ["tur1","tur2","tur3","tur4","tur5","tur6","tur7","tur8","tur9","tur10","tur11","tur12","tur13","tur14","tur15"]
+        let images = ["tur1","tur2","tur3","tur4","tur5","tur6","tur7","tur8","tur9","tur10","tur11","tur12","tur13","tur14","tur15","tur1","tur2","tur3","tur4","tur5","tur6","tur7","tur8","tur9","tur10","tur11","tur12","tur13","tur14","tur15"]
     
         override func viewWillAppear(animated: Bool) {
             self.navigationController?.navigationBarHidden = true

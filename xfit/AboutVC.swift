@@ -38,9 +38,10 @@ class AboutVC: UIViewController {
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.InsideScrollView
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor(red: 253/255, green: 218/255, blue: 0/255, alpha: 1.0);
-        slideshow.pageControl.pageIndicatorTintColor = UIColor.lightGrayColor();
+        slideshow.pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
+        slideshow.contentScaleMode = UIViewContentMode.ScaleToFill
         
-        slideshow.setImageInputs([ImageSource(imageString: "trainer1")!, ImageSource(imageString: "trainer2")!, ImageSource(imageString: "trainer3")!, ImageSource(imageString: "trainer4")!])
+        slideshow.setImageInputs([ImageSource(imageString: "foto1")!, ImageSource(imageString: "foto5")!, ImageSource(imageString: "foto3")!, ImageSource(imageString: "foto4")!])
         
         let recognizer = UITapGestureRecognizer(target: self, action: "click")
         slideshow.addGestureRecognizer(recognizer)
