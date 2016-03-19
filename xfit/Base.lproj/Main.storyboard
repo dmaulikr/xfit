@@ -1840,6 +1840,17 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addFacebook" destination="f75-0K-Wx1" id="VZb-Yw-K10"/>
+                        <outlet property="addFacebookWrapper" destination="Kcr-x2-Hau" id="LEj-Aq-pIN"/>
+                        <outlet property="addTwitter" destination="jyY-SM-LSL" id="zyK-lH-x5L"/>
+                        <outlet property="addTwitterWrapper" destination="kj9-Y9-VB3" id="oqO-7O-F9h"/>
+                        <outlet property="facebookAddingLbl" destination="XoQ-tE-2Kf" id="tzA-FB-cTG"/>
+                        <outlet property="facebookBonusLbl" destination="aKI-bO-51R" id="c3z-LB-iyK"/>
+                        <outlet property="totalBonusesLbl" destination="rHB-TH-Jww" id="qCR-F3-ely"/>
+                        <outlet property="twitterAddingLbl" destination="yfF-er-eou" id="OzM-yx-mzB"/>
+                        <outlet property="twitterBonusLbl" destination="n75-i9-qhO" id="RRO-3a-Egl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLs-Lh-kLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
