@@ -199,13 +199,7 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 })
             }
         }
-        
-//        func showImageViewer(sender:AnyObject) {
-//            let id = sender.view!.tag
-//            let post = self.posts[id]
-//            performSegueWithIdentifier("ViewerVC", sender: post)
-//        }
-//        
+    
         func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
             
             let news = self.news[indexPath.row]
@@ -221,13 +215,6 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     }
                 }
             }
-//            if segue.identifier == "ViewerVC" {
-//                if let viewerVC = segue.destinationViewController as? ViewerVC {
-//                    if let post = sender as? News {
-//                        viewerVC.post = post
-//                    }
-//                }
-//            }
         }
 
     @IBAction func openMenu(sender: AnyObject) {

@@ -34,7 +34,7 @@ class AboutVC: UIViewController {
             
         }
         
-        slideshow.backgroundColor = UIColor(red: 2535/255, green: 255/255, blue: 255/255, alpha: 0.0);
+        slideshow.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.0);
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.InsideScrollView
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor(red: 253/255, green: 218/255, blue: 0/255, alpha: 1.0);

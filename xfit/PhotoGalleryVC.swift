@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import ImageSlideshow
 
 class PhotoGalleryVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         
         @IBOutlet weak var collection: UICollectionView!
+    
+        @IBOutlet weak var slideshow: ImageSlideshow!
+    
+        var transitionDelegate: ZoomAnimatedTransitioningDelegate?
     
         let images = ["tur1","tur2","tur3","tur4","tur5","tur6","tur7","tur8","tur9","tur10","tur11","tur12","tur13","tur14","tur15","tur1","tur2","tur3","tur4","tur5","tur6","tur7","tur8","tur9","tur10","tur11","tur12","tur13","tur14","tur15"]
     
@@ -24,6 +29,14 @@ class PhotoGalleryVC: UIViewController, UICollectionViewDelegate, UICollectionVi
             super.viewDidLoad()
             
             parseData()
+            
+            var imageSet = [InputSource]()
+            for item in images {
+                let itemSourse = ImageSource(imageString: item)!
+                imageSet.append(itemSourse)
+                
+            }
+            slideshow.setImageInputs(imageSet)
         }
         
         func parseData() {
@@ -47,8 +60,14 @@ class PhotoGalleryVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
             
-            let image = self.images[indexPath.row]
-            performSegueWithIdentifier("ViewerVC", sender: image)
+            let ctr = FullScreenSlideshowViewController()
+            self.slideshow.setScrollViewPage(indexPath.row + 1, animated: false)
+            ctr.slideshow.pageControlPosition = PageControlPosition.Hidden
+            ctr.initialPage = slideshow.scrollViewPage
+            ctr.inputs = slideshow.images
+            self.transitionDelegate = ZoomAnimatedTransitioningDelegate(slideshowView: slideshow);
+            ctr.transitioningDelegate = self.transitionDelegate!
+            self.presentViewController(ctr, animated: true, completion: nil)
             
         }
         
@@ -79,16 +98,7 @@ class PhotoGalleryVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         @IBAction func openProfile(sender: AnyObject) {
             self.navigationController?.popViewControllerAnimated(true)
         }
-        
-        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if segue.identifier == "ViewerVC" {
-                if let viewerVC = segue.destinationViewController as? ViewerVC {
-                    if let img = sender as? String {
-                        viewerVC.img = img
-                    }
-                }
-            }
-        }
+    
     
     
 }

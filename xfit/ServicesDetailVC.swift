@@ -70,7 +70,6 @@ class ServicesDetailVC: UIViewController {
         var imageSet = [InputSource]()
         
         if let url = services.featuredImg {
-//            self.featuredImg.image = UIImage(named: url)
             let items = url.componentsSeparatedByString(",")
             for item in items {
                 let itemSourse = ImageSource(imageString: item)!
