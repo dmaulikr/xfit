@@ -4,12 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="dinpro.ttf">
-            <string>DINPro-Bold</string>
-            <string>DINPro-Bold</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -33,28 +27,21 @@
                                     <constraint firstAttribute="width" constant="174" id="asl-Bc-WXP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POWERED BY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wX-Rc-36J">
-                                <rect key="frame" x="157" y="597" width="62" height="13"/>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="10"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ЗАГРУЗКА..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wX-Rc-36J">
+                                <rect key="frame" x="155" y="328" width="67" height="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                 <color key="textColor" red="0.46274509803921571" green="0.74509803921568629" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FXOFFICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5m-nm-L6J">
-                                <rect key="frame" x="165" y="613" width="46" height="13"/>
-                                <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="O5m-nm-L6J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2pq-B8-cRT"/>
-                            <constraint firstItem="O5m-nm-L6J" firstAttribute="top" secondItem="2wX-Rc-36J" secondAttribute="bottom" constant="3" id="DS1-82-2q0"/>
                             <constraint firstAttribute="trailing" secondItem="KuK-iC-ocJ" secondAttribute="trailing" id="E4i-E0-gRI"/>
+                            <constraint firstItem="2wX-Rc-36J" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Gv3-pQ-Ct4"/>
+                            <constraint firstItem="2wX-Rc-36J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UA0-rm-php"/>
                             <constraint firstItem="2wX-Rc-36J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Y5W-1a-459"/>
                             <constraint firstItem="KuK-iC-ocJ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="YCn-z3-E6J"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="KuK-iC-ocJ" secondAttribute="bottom" id="ZzM-2B-lVA"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="O5m-nm-L6J" secondAttribute="bottom" constant="41" id="cti-DO-wRJ"/>
                             <constraint firstItem="ChO-vT-OZb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="kad-RU-7Dx"/>
                             <constraint firstItem="KuK-iC-ocJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="loD-Nz-eoo"/>
                             <constraint firstItem="ChO-vT-OZb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n35-kN-pd7"/>
@@ -62,6 +49,9 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ChO-vT-OZb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Y5W-1a-459"/>
                             </mask>
                         </variation>
                     </view>
