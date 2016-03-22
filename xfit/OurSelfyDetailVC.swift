@@ -27,8 +27,6 @@ class OurSelfyDetailVC: UIViewController, UIScrollViewDelegate {
     
         @IBOutlet weak var likesIcon: UILabel!
         
-        @IBOutlet weak var tableView: UITableView!
-        
         override func viewWillAppear(animated: Bool) {
             self.navigationController?.navigationBarHidden = true
             self.evo_drawerController?.openDrawerGestureModeMask = .Custom
@@ -136,7 +134,8 @@ class OurSelfyDetailVC: UIViewController, UIScrollViewDelegate {
         
         
         @IBAction func openProfile(sender: AnyObject) {
-            self.navigationController?.popViewControllerAnimated(true)
+            let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileVC") as! ProfileVC
+            self.navigationController?.pushViewController(controller, animated: true)
         }
         
         

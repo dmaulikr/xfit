@@ -18,6 +18,8 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var CheckInImage: UIImageView!
     @IBOutlet weak var addPhotoLbl: UILabel!
     
+    @IBOutlet weak var gotoHome: UIView!
+    
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
         self.evo_drawerController?.openDrawerGestureModeMask = .All
@@ -32,6 +34,15 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         textView.layer.borderWidth = 1.0
         textView.layer.borderColor = UIColor(red: 97/255, green: 97/255, blue: 97/255, alpha: 0.17).CGColor
         
+        let gotoHomeTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "gotoHomeTapFunc")
+        self.gotoHome.addGestureRecognizer(gotoHomeTap)
+        
+    }
+    
+    func gotoHomeTapFunc() {
+        
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MainMenuVC") as! MainMenuVC
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
@@ -54,7 +65,8 @@ class CheckInVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     }
     
     @IBAction func openProfile(sender: AnyObject) {
-        self.navigationController?.popViewControllerAnimated(true)
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileVC") as! ProfileVC
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
 

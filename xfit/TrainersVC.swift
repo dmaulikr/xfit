@@ -113,7 +113,8 @@ class TrainersVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }
     
     @IBAction func openProfile(sender: AnyObject) {
-        self.navigationController?.popViewControllerAnimated(true)
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileVC") as! ProfileVC
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

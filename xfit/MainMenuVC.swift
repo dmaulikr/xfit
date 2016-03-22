@@ -28,6 +28,10 @@ class MainMenuVC: UIViewController {
     
     @IBOutlet weak var contactsView: UIView!
     
+    @IBOutlet weak var checkInView: UIView!
+    
+    @IBOutlet weak var profileView: UIView!
+    
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
         self.evo_drawerController?.openDrawerGestureModeMask = .BezelPanningCenterView
@@ -61,6 +65,24 @@ class MainMenuVC: UIViewController {
         let contactsTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "contactsTapFunc")
         self.contactsView.addGestureRecognizer(contactsTap)
         
+        let checkInTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "checkInTapFunc")
+        self.checkInView.addGestureRecognizer(checkInTap)
+        
+        let profileTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "profileTapFunc")
+        self.profileView.addGestureRecognizer(profileTap)
+        
+    }
+    
+    func profileTapFunc() {
+        
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileVC") as! ProfileVC
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    func checkInTapFunc() {
+        
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("CheckInVC") as! CheckInVC
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func contactsTapFunc() {

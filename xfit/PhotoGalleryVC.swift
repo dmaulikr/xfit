@@ -96,7 +96,8 @@ class PhotoGalleryVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
         @IBAction func openProfile(sender: AnyObject) {
-            self.navigationController?.popViewControllerAnimated(true)
+            let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileVC") as! ProfileVC
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     
     
