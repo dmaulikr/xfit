@@ -32,7 +32,7 @@ class LogoAnimation: UIImageView {
         }
         
         self.animationImages = imgArray
-        self.animationDuration = 2.21
+        self.animationDuration = 2.22
         self.animationRepeatCount = 1
         self.startAnimating()
     }
