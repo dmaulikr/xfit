@@ -12,6 +12,8 @@ class MenuCell: UITableViewCell {
     
     @IBOutlet weak var menuItemLbl: UILabel!
     @IBOutlet weak var cellSeparatorView: UIView!
+    @IBOutlet weak var cellView: UIView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +25,5 @@ class MenuCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
-    
+
 }

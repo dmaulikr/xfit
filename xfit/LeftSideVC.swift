@@ -58,6 +58,7 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+<<<<<<< HEAD
         
         
 //        for var index = 0; index <= menuItems.count; ++index {
@@ -68,6 +69,8 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //        
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         cell?.backgroundColor = UIColor(red: 118/255, green: 190/255, blue: 52/255, alpha: 0.0)
+=======
+>>>>>>> origin/master
 
         
         switch(indexPath.row)  {
