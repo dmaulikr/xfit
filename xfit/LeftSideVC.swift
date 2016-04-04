@@ -25,7 +25,7 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         //
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "contentSizeDidChangeNotification:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
         //
         
         tableView.dataSource = self
@@ -66,7 +66,7 @@ class LeftSideVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //            let cell = tableView.cellForRowAtIndexPath(tempindexpath)
 //            cell?.backgroundColor = UIColor(red: 118/255, green: 190/255, blue: 52/255, alpha: 0.0)
 //        }
-//        
+      
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         cell?.backgroundColor = UIColor(red: 118/255, green: 190/255, blue: 52/255, alpha: 0.0)
 

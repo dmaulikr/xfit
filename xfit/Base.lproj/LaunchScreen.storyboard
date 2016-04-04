@@ -20,12 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="KuK-iC-ocJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЗАГРУЗКА..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0p-Qw-h8S">
-                                <rect key="frame" x="154" y="328" width="67" height="12"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
-                                <color key="textColor" red="0.46274509800000002" green="0.74509803919999995" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xfit_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ChO-vT-OZb">
                                 <rect key="frame" x="100" y="258" width="174" height="92"/>
                                 <constraints>
@@ -33,12 +27,6 @@
                                     <constraint firstAttribute="width" constant="174" id="asl-Bc-WXP"/>
                                 </constraints>
                             </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="J0p-Qw-h8S" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="18o-53-8zp"/>
-                            <constraint firstItem="J0p-Qw-h8S" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7BR-9J-Ifi"/>
-                            <constraint firstAttribute="trailing" secondItem="KuK-iC-ocJ" secondAttribute="trailing" id="E4i-E0-gRI"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ЗАГРУЗКА..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wX-Rc-36J">
                                 <rect key="frame" x="155" y="328" width="67" height="12"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
